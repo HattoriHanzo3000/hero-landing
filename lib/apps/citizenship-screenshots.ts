@@ -1,12 +1,12 @@
 import type { Locale } from "@/lib/i18n/config";
 
 export const CITIZENSHIP_SCREENSHOT_IDS = [
-  "01",
   "02",
   "03",
   "04",
   "05",
   "06",
+  "07",
 ] as const;
 
 export type CitizenshipScreenshotId =
