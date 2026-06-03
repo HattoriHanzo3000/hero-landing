@@ -17,14 +17,14 @@ export function AppCard({
   accentClassName = "bg-neutral-900",
 }: AppCardProps) {
   return (
-    <article className="group flex flex-col rounded-2xl border border-neutral-200/80 bg-white p-8 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-shadow duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] md:p-10">
+    <article className="group flex flex-col rounded-2xl border border-neutral-200/80 bg-white p-8 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-300/80 hover:shadow-[0_12px_40px_rgba(0,0,0,0.07)] md:p-10">
       <div className="mb-8 flex items-start justify-between gap-4">
         <span
-          className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${accentClassName}`}
+          className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl shadow-sm ${accentClassName}`}
         >
           <Icon className="h-5 w-5 text-white" strokeWidth={1.5} />
         </span>
-        <span className="rounded-full border border-neutral-200 px-3 py-1 text-[10px] font-medium tracking-widest text-neutral-400 uppercase">
+        <span className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-[10px] font-medium tracking-widest text-neutral-400 uppercase">
           iOS
         </span>
       </div>
@@ -45,7 +45,7 @@ export function AppCard({
         aria-label={`Download ${title} on the App Store`}
       >
         <Apple className="h-4 w-4" strokeWidth={1.5} />
-        <span>App Store</span>
+        App Store
       </a>
     </article>
   );
