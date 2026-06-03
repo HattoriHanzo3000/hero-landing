@@ -22,6 +22,22 @@ export const en: Dictionary = {
     comingSoon: "Coming soon",
     footerCopyright: "© 2025–2026 Ildar Gizatullin. All rights reserved.",
     headerNavAria: "App pages",
+    impressum: {
+      title: "Impressum",
+      tmgHeading: "Information pursuant to § 5 TMG",
+      name: "Ildar Gizatullin",
+      street: "Friedrichstr. 155",
+      city: "10117 Berlin",
+      country: "Germany",
+      contactHeading: "Contact",
+      emailLabel: "Email",
+      email: "info@gizatech.de",
+      contentHeading:
+        "Responsible for content pursuant to § 55 (2) RStV",
+      contentName: "Ildar Gizatullin",
+      contentStreet: "Friedrichstr. 155",
+      contentCity: "10117 Berlin",
+    },
   },
   home: {
     title: "Independent iOS development studio.",
@@ -96,13 +112,6 @@ export const en: Dictionary = {
         "We're preparing clear answers to the questions we hear most often. Until then, reach us via ",
       bodyAfter: ".",
     },
-    impressum: {
-      title: "Impressum",
-      intro:
-        "Legal disclosure content for Hero: B2 German Vocabulary will be published here. This page is a placeholder aligned with App Store requirements.",
-      placeholderBody:
-        "Company name, address, registration details, and responsible contact will appear in this section.",
-    },
     privacy: {
       title: "Privacy Policy",
       intro:
@@ -117,15 +126,6 @@ export const en: Dictionary = {
     },
     terms: {
       title: "Terms of Use",
-      intro:
-        "The full terms governing use of Hero: B2 German Vocabulary will be published here. This page is a placeholder for your App Store Terms of Use (EULA) URL.",
-      sections: [
-        "Acceptance of terms",
-        "License and permitted use",
-        "Subscriptions and billing",
-        "Disclaimer and limitation of liability",
-        "Governing law",
-      ],
     },
   },
   citizenship: {
@@ -169,13 +169,6 @@ export const en: Dictionary = {
       bodyBefore:
         "We're preparing clear answers to the questions we hear most often. Until then, reach us via ",
       bodyAfter: ".",
-    },
-    impressum: {
-      title: "Impressum",
-      intro:
-        "Legal disclosure content for Hero: German Citizenship 2026 will be published here. This page is a placeholder aligned with App Store requirements.",
-      placeholderBody:
-        "Company name, address, registration details, and responsible contact will appear in this section.",
     },
     privacy: {
       title: "Privacy Policy",

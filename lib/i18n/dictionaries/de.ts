@@ -22,6 +22,22 @@ export const de: Dictionary = {
     comingSoon: "Demnächst",
     footerCopyright: "© 2025–2026 Ildar Gizatullin. Alle Rechte vorbehalten.",
     headerNavAria: "App-Seiten",
+    impressum: {
+      title: "Impressum",
+      tmgHeading: "Angaben gemäß § 5 TMG",
+      name: "Ildar Gizatullin",
+      street: "Friedrichstr. 155",
+      city: "10117 Berlin",
+      country: "Deutschland",
+      contactHeading: "Kontakt",
+      emailLabel: "E-Mail",
+      email: "info@gizatech.de",
+      contentHeading:
+        "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+      contentName: "Ildar Gizatullin",
+      contentStreet: "Friedrichstr. 155",
+      contentCity: "10117 Berlin",
+    },
   },
   home: {
     title: "Unabhängiges iOS-Entwicklungsstudio.",
@@ -96,13 +112,6 @@ export const de: Dictionary = {
         "Wir bereiten klare Antworten auf die häufigsten Fragen vor. Bis dahin erreichst du uns unter ",
       bodyAfter: ".",
     },
-    impressum: {
-      title: "Impressum",
-      intro:
-        "Die Impressumsangaben für Hero: B2 Beruf Vokabeln werden hier veröffentlicht. Diese Seite ist ein Platzhalter gemäß App-Store-Anforderungen.",
-      placeholderBody:
-        "Firmenname, Anschrift, Registerangaben und verantwortliche Kontaktperson erscheinen in diesem Abschnitt.",
-    },
     privacy: {
       title: "Datenschutzerklärung",
       intro:
@@ -117,15 +126,8 @@ export const de: Dictionary = {
     },
     terms: {
       title: "Nutzungsbedingungen",
-      intro:
-        "Die vollständigen Nutzungsbedingungen für Hero: B2 Beruf Vokabeln werden hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-EULA-URL.",
-      sections: [
-        "Annahme der Bedingungen",
-        "Lizenz und zulässige Nutzung",
-        "Abonnements und Abrechnung",
-        "Haftungsausschluss und Haftungsbeschränkung",
-        "Anwendbares Recht",
-      ],
+      languageNotice:
+        "Die Nutzungsbedingungen sind derzeit nur auf Englisch verfügbar.",
     },
   },
   citizenship: {
@@ -169,13 +171,6 @@ export const de: Dictionary = {
       bodyBefore:
         "Wir bereiten klare Antworten auf die häufigsten Fragen vor. Bis dahin erreichst du uns unter ",
       bodyAfter: ".",
-    },
-    impressum: {
-      title: "Impressum",
-      intro:
-        "Die Impressumsangaben für Hero: Einbürgerungstest 2026 werden hier veröffentlicht. Diese Seite ist ein Platzhalter gemäß App-Store-Anforderungen.",
-      placeholderBody:
-        "Firmenname, Anschrift, Registerangaben und verantwortliche Kontaktperson erscheinen in diesem Abschnitt.",
     },
     privacy: {
       title: "Datenschutzerklärung",

@@ -22,6 +22,21 @@ export type Dictionary = {
     comingSoon: string;
     footerCopyright: string;
     headerNavAria: string;
+    impressum: {
+      title: string;
+      tmgHeading: string;
+      name: string;
+      street: string;
+      city: string;
+      country: string;
+      contactHeading: string;
+      emailLabel: string;
+      email: string;
+      contentHeading: string;
+      contentName: string;
+      contentStreet: string;
+      contentCity: string;
+    };
   };
   home: {
     title: string;
@@ -84,11 +99,6 @@ export type Dictionary = {
       bodyBefore: string;
       bodyAfter: string;
     };
-    impressum: {
-      title: string;
-      intro: string;
-      placeholderBody: string;
-    };
     privacy: {
       title: string;
       intro: string;
@@ -96,8 +106,7 @@ export type Dictionary = {
     };
     terms: {
       title: string;
-      intro: string;
-      sections: readonly [string, string, string, string, string];
+      languageNotice?: string;
     };
   };
   citizenship: {
@@ -132,11 +141,6 @@ export type Dictionary = {
       bodyBefore: string;
       bodyAfter: string;
     };
-    impressum: {
-      title: string;
-      intro: string;
-      placeholderBody: string;
-    };
     privacy: {
       title: string;
       intro: string;
@@ -149,6 +153,7 @@ export type Dictionary = {
     };
   };
 };
+
 
 export type ProductKey = "b2Beruf" | "citizenship";
 
