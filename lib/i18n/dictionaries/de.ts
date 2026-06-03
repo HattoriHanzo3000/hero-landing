@@ -70,9 +70,17 @@ export const de: Dictionary = {
       downloadCta: "Im App Store laden",
       downloadAria: "Hero: B2 Beruf Vokabeln im App Store laden",
       supportLink: "Hilfe nötig? Support kontaktieren",
-      cardEyebrow: "iOS · Fokus Deutsch B2",
-      cardBody:
-        "Der digitale Begleiter für deinen Integrations- oder Berufssprachkurs in Deutschland—ruhig, fokussiert und auf die Prüfung ausgerichtet.",
+      screenshotsHeading: "In der App",
+      screenshotExpandHint: "Zum Vergrößern tippen",
+      screenshotCloseLabel: "Schließen",
+      screenshotAlts: [
+        "Kapitelübersicht mit Lernfortschritt",
+        "Wortliste eines Fokus Deutsch B2 Kapitels",
+        "Wortdetail mit Übersetzung und Beispielen",
+        "Karteikarten-Übungsansicht",
+        "Eigene Vokabeln im Bereich Meine Wörter",
+        "Weiterer App-Bildschirm",
+      ],
     },
     support: {
       title: "Wir helfen dir gern",

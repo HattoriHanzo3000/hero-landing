@@ -70,9 +70,17 @@ export const en: Dictionary = {
       downloadCta: "Download on the App Store",
       downloadAria: "Download Hero: B2 German Vocabulary on the App Store",
       supportLink: "Need help? Contact support",
-      cardEyebrow: "iOS · Fokus Deutsch B2",
-      cardBody:
-        "The digital companion for your integration or professional language course in Germany—calm, focused, and built for real exam prep.",
+      screenshotsHeading: "Inside the app",
+      screenshotExpandHint: "Click to enlarge",
+      screenshotCloseLabel: "Close",
+      screenshotAlts: [
+        "Chapter overview with vocabulary progress",
+        "Word list for a Fokus Deutsch B2 chapter",
+        "Word detail with translation and examples",
+        "Flashcard practice screen",
+        "My Words custom vocabulary section",
+        "Additional app screen",
+      ],
     },
     support: {
       title: "We're here to help",

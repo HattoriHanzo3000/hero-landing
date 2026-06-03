@@ -61,8 +61,17 @@ export type Dictionary = {
       downloadCta: string;
       downloadAria: string;
       supportLink: string;
-      cardEyebrow: string;
-      cardBody: string;
+      screenshotsHeading: string;
+      screenshotExpandHint: string;
+      screenshotCloseLabel: string;
+      screenshotAlts: readonly [
+        string,
+        string,
+        string,
+        string,
+        string,
+        string,
+      ];
     };
     support: {
       title: string;
