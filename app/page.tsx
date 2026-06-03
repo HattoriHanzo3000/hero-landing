@@ -25,7 +25,7 @@ const APPS = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-full flex-col bg-[#f7f7f5] font-sans text-neutral-900">
+    <div className="flex min-h-screen flex-col bg-[#f7f7f5] font-sans text-neutral-900">
       <SiteHeader />
       <main className="flex-1">
         <HeroSection />

@@ -2,11 +2,11 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 const FOOTER_LINKS = [
-  { href: "/hero-einbürgerungstest/support", label: "Support" },
-  { href: "/hero-einbürgerungstest/faq", label: "FAQ" },
-  { href: "/hero-einbürgerungstest/impressum", label: "Impressum" },
-  { href: "/hero-einbürgerungstest/privacy-policy", label: "Privacy" },
-  { href: "/hero-einbürgerungstest/terms-of-use", label: "Terms" },
+  { href: "/hero-b2-beruf/support", label: "Support" },
+  { href: "/hero-b2-beruf/faq", label: "FAQ" },
+  { href: "/hero-b2-beruf/impressum", label: "Impressum" },
+  { href: "/hero-b2-beruf/privacy-policy", label: "Privacy" },
+  { href: "/hero-b2-beruf/terms-of-use", label: "Terms" },
 ] as const;
 
 type AppShellProps = {
@@ -30,10 +30,10 @@ export function AppShell({ children, narrow = false }: AppShellProps) {
             </Link>
             <span className="hidden h-3 w-px bg-neutral-200 sm:block" aria-hidden />
             <Link
-              href="/hero-einbürgerungstest"
+              href="/hero-b2-beruf"
               className="text-sm font-semibold tracking-[0.15em] text-neutral-900 uppercase transition-opacity hover:opacity-60"
             >
-              Einbürgerungstest
+              B2 Beruf
             </Link>
           </div>
           <nav
