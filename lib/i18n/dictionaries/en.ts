@@ -143,9 +143,17 @@ export const en: Dictionary = {
       downloadCta: "Download on the App Store",
       downloadAria: "Download Hero: German Citizenship 2026 on the App Store",
       supportLink: "Need help? Contact support",
-      cardEyebrow: "iOS · 4 languages",
-      cardBody:
-        "Fair freemium—try the first topics, SRS, and exam simulations free. Unlock Pro flexibly, including our lifetime launch offer.",
+      screenshotsHeading: "Inside the app",
+      screenshotExpandHint: "Click to enlarge",
+      screenshotCloseLabel: "Close",
+      screenshotAlts: [
+        "Topic overview with learning progress",
+        "Question list for a Life in Germany theme",
+        "Question detail with explanation",
+        "Spaced repetition practice screen",
+        "Exam simulation setup",
+        "Additional app screen",
+      ],
     },
     support: {
       title: "We're here to help",
@@ -163,27 +171,9 @@ export const en: Dictionary = {
     },
     privacy: {
       title: "Privacy Policy",
-      intro:
-        "Our privacy policy for Hero: German Citizenship 2026 will be published here. This page is a placeholder for your App Store Privacy Policy URL.",
-      sections: [
-        "Data we collect",
-        "How we use your information",
-        "Third-party services",
-        "Your rights (including GDPR)",
-        "Contact for privacy requests",
-      ],
     },
     terms: {
       title: "Terms of Use",
-      intro:
-        "The full terms governing use of Hero: German Citizenship 2026 will be published here. This page is a placeholder for your App Store Terms of Use (EULA) URL.",
-      sections: [
-        "Acceptance of terms",
-        "License and permitted use",
-        "Subscriptions and billing",
-        "Disclaimer and limitation of liability",
-        "Governing law",
-      ],
     },
   },
 };

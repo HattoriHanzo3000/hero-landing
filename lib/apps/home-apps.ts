@@ -14,7 +14,7 @@ export type HomeAppConfig = {
 export const HOME_APPS: readonly HomeAppConfig[] = [
   {
     id: "citizenship",
-    href: "/hero-einbürgerungstest",
+    href: "/hero-einbuergerungstest",
     iconSrc: "/apps/einbuergerungstest/icon.png",
   },
   {

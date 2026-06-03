@@ -126,8 +126,17 @@ export type Dictionary = {
       downloadCta: string;
       downloadAria: string;
       supportLink: string;
-      cardEyebrow: string;
-      cardBody: string;
+      screenshotsHeading: string;
+      screenshotExpandHint: string;
+      screenshotCloseLabel: string;
+      screenshotAlts: readonly [
+        string,
+        string,
+        string,
+        string,
+        string,
+        string,
+      ];
     };
     support: {
       title: string;
@@ -142,13 +151,11 @@ export type Dictionary = {
     };
     privacy: {
       title: string;
-      intro: string;
-      sections: readonly [string, string, string, string, string];
+      languageNotice?: string;
     };
     terms: {
       title: string;
-      intro: string;
-      sections: readonly [string, string, string, string, string];
+      languageNotice?: string;
     };
   };
 };

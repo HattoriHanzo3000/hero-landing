@@ -147,9 +147,17 @@ export const de: Dictionary = {
       downloadCta: "Im App Store laden",
       downloadAria: "Hero: Einbürgerungstest 2026 im App Store laden",
       supportLink: "Hilfe nötig? Support kontaktieren",
-      cardEyebrow: "iOS · 4 Sprachen",
-      cardBody:
-        "Faires Freemium – erste Themen, SRS und Simulationen kostenlos testen. Pro flexibel freischalten, inkl. Launch-Angebot für lebenslangen Zugang.",
+      screenshotsHeading: "In der App",
+      screenshotExpandHint: "Zum Vergrößern tippen",
+      screenshotCloseLabel: "Schließen",
+      screenshotAlts: [
+        "Themenübersicht mit Lernfortschritt",
+        "Fragenliste zu einem Leben-in-Deutschland-Thema",
+        "Fragendetail mit Erklärung",
+        "Übungsansicht mit Spaced Repetition",
+        "Einrichtung der Prüfungssimulation",
+        "Weiterer App-Bildschirm",
+      ],
     },
     support: {
       title: "Wir helfen dir gern",
@@ -167,27 +175,13 @@ export const de: Dictionary = {
     },
     privacy: {
       title: "Datenschutzerklärung",
-      intro:
-        "Unsere Datenschutzerklärung für Hero: Einbürgerungstest 2026 wird hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-Datenschutz-URL.",
-      sections: [
-        "Welche Daten wir erheben",
-        "Wie wir deine Informationen nutzen",
-        "Dienste von Drittanbietern",
-        "Deine Rechte (einschließlich DSGVO)",
-        "Kontakt für Datenschutzanfragen",
-      ],
+      languageNotice:
+        "Die Datenschutzerklärung ist derzeit nur auf Englisch verfügbar.",
     },
     terms: {
       title: "Nutzungsbedingungen",
-      intro:
-        "Die vollständigen Nutzungsbedingungen für Hero: Einbürgerungstest 2026 werden hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-EULA-URL.",
-      sections: [
-        "Annahme der Bedingungen",
-        "Lizenz und zulässige Nutzung",
-        "Abonnements und Abrechnung",
-        "Haftungsausschluss und Haftungsbeschränkung",
-        "Anwendbares Recht",
-      ],
+      languageNotice:
+        "Die Nutzungsbedingungen sind derzeit nur auf Englisch verfügbar.",
     },
   },
 };

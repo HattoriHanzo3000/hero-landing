@@ -2,7 +2,7 @@ import type { ProductKey } from "./dictionaries/types";
 
 export const PRODUCT_BASE_PATH: Record<ProductKey, string> = {
   b2Beruf: "/hero-b2-beruf",
-  citizenship: "/hero-einbürgerungstest",
+  citizenship: "/hero-einbuergerungstest",
 };
 
 export function productNavLinks(
