@@ -5,8 +5,8 @@ export const citizenshipTermsEn: CitizenshipTermsDocument = {
     {
       title: "1. Introduction",
       paragraphs: [
-        "Welcome to **HERO: German Citizenship 2026** (the “App”). The App is developed and published by an independent developer as an educational tool to support users in preparing for the Life in Germany citizenship test (Einbürgerungstest), including practice with official-style questions and exam simulation.",
-        "This App is intended solely for educational purposes. It is not an official product of, nor affiliated with, nor endorsed by the Federal Office for Migration and Refugees (Bundesamt für Migration und Flüchtlinge, BAMF), or any other governmental or examination authority.",
+        "Welcome to **Hero: Einbürgerungstest** (the “App”). The App is developed and published by an independent developer as an educational tool to help users prepare for the “Leben in Deutschland” / Einbürgerungstest (naturalization test).",
+        "This App is intended solely for educational purposes. It is not an official product of, nor affiliated with, nor endorsed by the Federal Office for Migration and Refugees (Bundesamt für Migration und Flüchtlinge, BAMF) or any other governmental authority.",
         "By downloading, accessing, or using the App, you agree to be bound by these Terms of Use. If you do not agree, you must not use the App.",
       ],
     },
@@ -58,25 +58,25 @@ export const citizenshipTermsEn: CitizenshipTermsDocument = {
         {
           title: "3.1 No Official Status",
           paragraphs: [
-            "The App is an independent educational tool created for practice and preparation purposes only. It is not an official product of, nor affiliated with, nor endorsed by the Federal Office for Migration and Refugees (Bundesamt für Migration und Flüchtlinge, BAMF), or any other governmental, educational, or examination authority.",
+            "The App is an independent educational tool created for practice and preparation purposes only. It is not an official product of, nor affiliated with, nor endorsed by the Federal Office for Migration and Refugees (Bundesamt für Migration und Flüchtlinge, BAMF) or any other governmental authority.",
           ],
         },
         {
           title: "3.2 No Guarantee of Accuracy",
           paragraphs: [
-            "While the developer strives to provide up-to-date and accurate content, the App may contain errors, omissions, or outdated information. The content of the App does not replace official study materials or question catalogs published by BAMF or other authorities.",
+            "While the developer strives to provide up-to-date and accurate content, the App may contain errors, omissions, or outdated information. The content of the App does not replace official study materials published by BAMF or other authorities.",
           ],
         },
         {
           title: "3.3 No Guarantee of Results",
           paragraphs: [
-            "The App is designed to support users in preparing for the Life in Germany citizenship test (Einbürgerungstest). However, the developer makes no warranty or guarantee that use of the App will result in passing any exam, obtaining a certificate, or achieving any specific outcome.",
+            "The App is designed to support users in preparing for the “Leben in Deutschland” test. However, the developer makes no warranty or guarantee that use of the App will result in passing the test, obtaining citizenship, or achieving any particular outcome.",
           ],
         },
         {
           title: "3.4 User Responsibility",
           paragraphs: [
-            "Users are solely responsible for verifying information through official and authoritative sources, and for making all necessary preparations for exams or courses. The developer accepts no liability for any consequences arising from reliance on the App, including but not limited to exam failure, delays in naturalization or application processes, denial of citizenship or residence rights, or other personal, legal, educational, or administrative outcomes.",
+            "Users are solely responsible for verifying information with official sources and for making all necessary preparations for the test. The developer accepts no liability for any consequences arising from reliance on the App, including but not limited to exam failure, delays in application processes, or other personal, legal, or administrative consequences.",
           ],
         },
       ],
@@ -182,7 +182,7 @@ export const citizenshipTermsEn: CitizenshipTermsDocument = {
         {
           title: "7.2 Trademarks",
           paragraphs: [
-            "The name “**HERO: German Citizenship 2026**” and associated logo are used in connection with the App. Nothing in these Terms grants users any right or license to use the developer’s trademarks, trade names, or logos without prior written permission.",
+            "The name “**Hero: Einbürgerungstest**” and associated logo are used in connection with the App. Nothing in these Terms grants users any right or license to use the developer’s trademarks, trade names, or logos without prior written permission.",
           ],
         },
         {
@@ -246,7 +246,7 @@ export const citizenshipTermsEn: CitizenshipTermsDocument = {
             "The developer shall not be liable for:",
           ],
           listItems: [
-            "(a) your performance or results on the Life in Germanyssprachkurs;",
+            "(a) your performance or results on the “Leben in Deutschland” / Einbürgerungstest;",
             "(b) any errors, omissions, or inaccuracies in the App’s content;",
             "(c) exam failures, delays in application processes, or denial of citizenship or residence rights;",
             "(d) any reliance you place on the App or its content.",

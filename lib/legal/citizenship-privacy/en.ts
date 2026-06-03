@@ -5,7 +5,7 @@ export const citizenshipPrivacyEn: CitizenshipPrivacyDocument = {
     {
       title: "1. Introduction",
       paragraphs: [
-        "This Privacy Policy describes how the app **HERO: German Citizenship 2026** (the “App”) collects, uses, and protects personal data when you use it. The App is an independent educational tool designed to help users prepare for the Life in Germany citizenship test (Einbürgerungstest). It is provided by an independent developer and is not an official product of, nor affiliated with, the Federal Office for Migration and Refugees (Bundesamt für Migration und Flüchtlinge, BAMF), any other examination authority.",
+        "This Privacy Policy describes how the app **Hero: Einbürgerungstest** (the “App”) collects, uses, and protects personal data when you use it. The App was created as an educational tool to support preparation for the “Leben in Deutschland” / Einbürgerungstest. It is provided by an independent developer and is not an official product of, nor affiliated with, the Federal Office for Migration and Refugees (Bundesamt für Migration und Flüchtlinge, BAMF) or any other authority.",
         "The developer is committed to handling personal data responsibly, transparently, and in compliance with the General Data Protection Regulation (GDPR). By downloading and using the App, you acknowledge that you have read and understood this Privacy Policy.",
       ],
     },
@@ -24,7 +24,7 @@ export const citizenshipPrivacyEn: CitizenshipPrivacyDocument = {
         "The App is designed to minimize the collection of personal data. Depending on how you use the App, the following categories of information may be processed:",
       ],
       listItems: [
-        "**Data you provide voluntarily.** The App may allow you to enter optional information, such as your preferred language or test date. This information is stored locally on your device and is not transmitted to the developer.",
+        "**Data you provide voluntarily.** The App may allow you to enter optional information, such as your preferred language, planned test location, or test date. This information is stored locally on your device and is not transmitted to the developer.",
         "**Data collected automatically.** For technical reasons, limited device and usage information may be processed, such as device type, operating system version, App version, and anonymized statistics about which features are used. This information does not identify you personally and is used only to ensure functionality and stability.",
         "**Data from third-party services.** If you use the free version, advertising networks (e.g., Google AdMob or Apple Advertising) may collect data such as device identifiers, approximate location, or interactions with ads. If you make in-app purchases, Apple processes the necessary payment information. The developer does not have access to your financial data and only receives confirmation that a purchase was completed.",
         "**Contact data.** If you contact the developer by email, your email address and the content of your inquiry will be processed for the purpose of responding to your request.",
@@ -36,7 +36,7 @@ export const citizenshipPrivacyEn: CitizenshipPrivacyDocument = {
         "Personal data is processed only to the extent necessary for the operation and improvement of the App. The purposes include:",
       ],
       listItems: [
-        "**Providing functionality:** to enable you to practice citizenship test questions, personalize your learning experience, and ensure the App runs smoothly on your device.",
+        "**Providing functionality:** to enable you to practice test questions, personalize your learning experience, and ensure the App runs smoothly on your device.",
         "**Customer support:** to respond to inquiries you send by email.",
         "**Advertising:** to provide ads in the free version of the App, which allows the App to remain available without charge.",
         "**Payments:** to grant access to premium features once Apple confirms that a purchase or subscription has been made.",
@@ -74,7 +74,7 @@ export const citizenshipPrivacyEn: CitizenshipPrivacyDocument = {
         "We retain personal data only for as long as it is necessary to fulfil the purposes described in this Privacy Policy, unless a longer retention period is required or permitted by law. Specific retention practices are as follows:",
       ],
       listItems: [
-        "**On-device data:** Information you enter into the App (such as language, federal state, or test date) is stored only locally on your device. This data remains under your control and is deleted when you remove or reset the App. The developer does not have access to this information.",
+        "**On-device data:** Information you enter into the App (such as language, test location, or test date) is stored only locally on your device. This data remains under your control and is deleted when you remove or reset the App. The developer does not have access to this information.",
         "**Technical and usage data:** Anonymized usage information collected to maintain and improve the App is retained only as long as necessary for those purposes and is then deleted or aggregated in a way that no longer allows identification.",
         "**Email correspondence:** If you contact the developer by email, your message and contact details will be retained for as long as necessary to resolve your inquiry and, where applicable, for a reasonable period afterward to comply with legal obligations (for example, under commercial or tax law).",
         "**Third-party services:** Data processed by Apple or advertising networks is retained according to their own retention policies, which users are encouraged to review directly.",
