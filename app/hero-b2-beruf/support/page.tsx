@@ -1,15 +1,18 @@
 import { Mail } from "lucide-react";
 import { ContentPage } from "../components/content-page";
+import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { getLocale } from "@/lib/i18n/get-locale";
 
 const SUPPORT_EMAIL = "support@gizatech.de";
 
-export default function SupportPage() {
+export default async function SupportPage() {
+  const locale = await getLocale();
+  const dict = getDictionary(locale);
+  const t = dict.b2Beruf.support;
+
   return (
-    <ContentPage eyebrow="Support" title="We're here to help">
-      <p>
-        Questions about Hero-Deutsch B2 Beruf, your account, or the app? Reach
-        our team directly—we typically respond within one business day.
-      </p>
+    <ContentPage eyebrow={dict.common.nav.support} title={t.title}>
+      <p>{t.intro}</p>
 
       <a
         href={`mailto:${SUPPORT_EMAIL}`}
@@ -20,7 +23,7 @@ export default function SupportPage() {
         </span>
         <span>
           <span className="block text-xs tracking-wide text-neutral-400 uppercase">
-            Email
+            {dict.common.emailLabel}
           </span>
           <span className="mt-0.5 block text-base font-medium text-neutral-900">
             {SUPPORT_EMAIL}
@@ -28,10 +31,7 @@ export default function SupportPage() {
         </span>
       </a>
 
-      <p className="text-neutral-500">
-        Please include your device model and iOS version if you&apos;re
-        reporting a technical issue—it helps us resolve things faster.
-      </p>
+      <p className="text-neutral-500">{t.deviceHint}</p>
     </ContentPage>
   );
 }

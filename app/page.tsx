@@ -1,53 +1,77 @@
+import Link from "next/link";
+import { BookOpen, Briefcase } from "lucide-react";
 import { AppCard } from "./components/app-card";
-import { HeroSection } from "./components/hero-section";
 import { SiteFooter } from "./components/site-footer";
 import { SiteHeader } from "./components/site-header";
-import { BookOpen, Briefcase } from "lucide-react";
+import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { getLocale } from "@/lib/i18n/get-locale";
 
-const APPS = [
-  {
-    icon: BookOpen,
-    title: "Hero: Einbürgerungstest 2026",
-    subtitle: "Citizenship",
-    description:
-      "Prepare with confidence for Germany's official naturalization test. Curated question banks, focused practice sessions, and clear progress—aligned for the 2026 exam cycle.",
-    accentClassName: "bg-neutral-800",
-  },
-  {
-    icon: Briefcase,
-    title: "Hero-Deutsch B2 Beruf",
-    subtitle: "Professional German",
-    description:
-      "Build workplace-ready German at B2 level. Profession-specific vocabulary, realistic dialogues, and structured paths designed for your career—not generic textbooks.",
-    accentClassName: "bg-neutral-600",
-  },
-] as const;
+export default async function Home() {
+  const locale = await getLocale();
+  const dict = getDictionary(locale);
 
-export default function Home() {
+  const apps = [
+    {
+      icon: BookOpen,
+      href: "/hero-einbürgerungstest",
+      accentClassName: "bg-neutral-800",
+      ...dict.home.apps.citizenship,
+    },
+    {
+      icon: Briefcase,
+      href: "/hero-b2-beruf",
+      accentClassName: "bg-neutral-600",
+      ...dict.home.apps.b2Beruf,
+    },
+  ] as const;
+
   return (
-    <div className="flex min-h-screen flex-col bg-[#f7f7f5] font-sans text-neutral-900">
+    <div className="flex w-full flex-1 flex-col bg-[#f7f7f5] font-sans text-neutral-900">
       <SiteHeader />
-      <main className="flex-1">
-        <HeroSection />
+
+      <main>
+        <section className="mx-auto max-w-6xl px-6 pt-20 pb-12 md:px-10 md:pt-28 md:pb-16">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl font-medium tracking-tight text-neutral-900 sm:text-5xl md:text-6xl">
+              {dict.home.title}
+            </h1>
+            <p className="mt-6 text-xl leading-relaxed text-neutral-500 md:text-2xl">
+              {dict.home.subtitle}
+            </p>
+          </div>
+        </section>
+
         <section
           id="apps"
           className="mx-auto w-full max-w-6xl px-6 pb-24 md:px-10 md:pb-32"
         >
-          <div className="mb-12 max-w-xl md:mb-16">
+          <div className="mb-10">
             <h2 className="text-sm font-medium tracking-[0.2em] text-neutral-400 uppercase">
-              Our apps
+              {dict.home.projectsHeading}
             </h2>
-            <p className="mt-3 text-lg leading-relaxed text-neutral-600 md:text-xl">
-              Two focused experiences. One standard of craft.
-            </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
-            {APPS.map((app) => (
-              <AppCard key={app.title} {...app} />
+
+          <div className="grid gap-8 md:grid-cols-2">
+            {apps.map(({ href, icon, title, subtitle, description, accentClassName }) => (
+              <Link
+                key={title}
+                href={href}
+                className="group block transition-transform active:scale-[0.99]"
+              >
+                <AppCard
+                  icon={icon}
+                  title={title}
+                  subtitle={subtitle}
+                  description={description}
+                  accentClassName={accentClassName}
+                  ctaLabel={dict.home.viewApp}
+                />
+              </Link>
             ))}
           </div>
         </section>
       </main>
+
       <SiteFooter />
     </div>
   );

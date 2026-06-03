@@ -6,6 +6,7 @@ export type AppCardProps = {
   title: string;
   subtitle: string;
   description: string;
+  ctaLabel: string;
   accentClassName?: string;
 };
 
@@ -14,6 +15,7 @@ export function AppCard({
   title,
   subtitle,
   description,
+  ctaLabel,
   accentClassName = "bg-neutral-900",
 }: AppCardProps) {
   return (
@@ -39,14 +41,10 @@ export function AppCard({
         {description}
       </p>
 
-      <a
-        href="#"
-        className="mt-10 inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-neutral-900 px-6 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800 sm:w-auto"
-        aria-label={`Download ${title} on the App Store`}
-      >
+      <span className="mt-10 inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-neutral-900 px-6 py-3.5 text-sm font-medium text-white transition-colors group-hover:bg-neutral-800 sm:w-auto">
         <Apple className="h-4 w-4" strokeWidth={1.5} />
-        App Store
-      </a>
+        {ctaLabel}
+      </span>
     </article>
   );
 }

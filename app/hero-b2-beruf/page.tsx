@@ -1,35 +1,34 @@
 import { Apple, Briefcase } from "lucide-react";
 import Link from "next/link";
 import { AppShell } from "./components/app-shell";
+import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { getLocale } from "@/lib/i18n/get-locale";
 
-const FEATURES = [
-  "Profession-specific vocabulary for your field—not generic lists",
-  "Realistic workplace dialogues and structured learning paths",
-  "B2-level focus designed for career milestones in Germany",
-] as const;
+export default async function HeroB2BerufPage() {
+  const locale = await getLocale();
+  const dict = getDictionary(locale);
+  const t = dict.b2Beruf.landing;
+  const nav = dict.common.nav;
 
-export default function HeroB2BerufPage() {
   return (
     <AppShell>
       <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-20">
         <div className="max-w-xl lg:max-w-none">
           <p className="text-xs font-medium tracking-[0.25em] text-neutral-400 uppercase">
-            Professional German · Germany
+            {t.eyebrow}
           </p>
           <h1 className="mt-6 text-4xl leading-[1.1] font-light tracking-tight text-neutral-900 md:text-5xl md:leading-[1.08]">
-            Hero-Deutsch
+            {t.title}
             <span className="mt-1 block font-normal text-neutral-500">
-              B2 Beruf
+              {t.titleAccent}
             </span>
           </h1>
           <p className="mt-8 text-base leading-relaxed text-neutral-500 md:text-lg">
-            Build workplace-ready German at B2 level. Profession-specific
-            vocabulary, realistic dialogues, and structured paths—for your
-            career, not another generic textbook.
+            {t.description}
           </p>
 
           <ul className="mt-10 space-y-4 border-t border-neutral-200/80 pt-10">
-            {FEATURES.map((feature) => (
+            {t.features.map((feature) => (
               <li
                 key={feature}
                 className="flex gap-3 text-sm leading-relaxed text-neutral-600"
@@ -47,16 +46,16 @@ export default function HeroB2BerufPage() {
             <a
               href="#"
               className="inline-flex items-center justify-center gap-2.5 rounded-full bg-neutral-900 px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800"
-              aria-label="Download Hero-Deutsch B2 Beruf on the App Store"
+              aria-label={t.downloadAria}
             >
               <Apple className="h-4 w-4" strokeWidth={1.5} />
-              Download on the App Store
+              {t.downloadCta}
             </a>
             <Link
               href="/hero-b2-beruf/support"
               className="text-center text-sm tracking-wide text-neutral-400 transition-colors hover:text-neutral-700 sm:text-left"
             >
-              Need help? Contact support
+              {t.supportLink}
             </Link>
           </div>
         </div>
@@ -66,24 +65,23 @@ export default function HeroB2BerufPage() {
             <Briefcase className="h-6 w-6 text-white" strokeWidth={1.5} />
           </span>
           <p className="mt-8 text-xs font-medium tracking-[0.15em] text-neutral-400 uppercase">
-            iOS · Career-focused
+            {t.cardEyebrow}
           </p>
           <p className="mt-3 text-lg leading-relaxed text-neutral-600">
-            Language learning shaped around how you actually work—calm
-            interface, clear progress, and content that respects your time.
+            {t.cardBody}
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
               href="/hero-b2-beruf/faq"
               className="rounded-full border border-neutral-200 bg-neutral-50 px-4 py-2 text-xs font-medium tracking-wide text-neutral-500 transition-colors hover:border-neutral-300 hover:text-neutral-700"
             >
-              FAQ
+              {nav.faq}
             </Link>
             <Link
               href="/hero-b2-beruf/privacy-policy"
               className="rounded-full border border-neutral-200 bg-neutral-50 px-4 py-2 text-xs font-medium tracking-wide text-neutral-500 transition-colors hover:border-neutral-300 hover:text-neutral-700"
             >
-              Privacy Policy
+              {nav.privacy}
             </Link>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { getLocale } from "@/lib/i18n/get-locale";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,22 +14,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hero — Mobile learning for Germany",
-  description:
-    "Premium iOS apps for German citizenship preparation and professional B2 language learning.",
+  title: "GizaTech - Independent iOS Development Studio",
+  description: "Creator of the Hero app series.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang={locale}
+      className={`${geistSans.variable} ${geistMono.variable} bg-[#f7f7f5]`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="flex min-h-dvh flex-col font-sans antialiased text-neutral-900 selection:bg-neutral-200">
+        {children}
+      </body>
     </html>
   );
 }
