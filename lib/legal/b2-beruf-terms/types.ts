@@ -1,6 +1,7 @@
 export type TermsBlock = {
   paragraphs?: readonly string[];
   listItems?: readonly string[];
+  trailingParagraphs?: readonly string[];
 };
 
 export type TermsSubsection = TermsBlock & {

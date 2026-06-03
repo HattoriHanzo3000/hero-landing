@@ -4,7 +4,11 @@ import type {
   TermsSection,
 } from "@/lib/legal/b2-beruf-terms/types";
 
-function TermsBlockContent({ paragraphs, listItems }: TermsBlock) {
+function TermsBlockContent({
+  paragraphs,
+  listItems,
+  trailingParagraphs,
+}: TermsBlock) {
   return (
     <>
       {paragraphs?.map((paragraph) => (
@@ -17,6 +21,9 @@ function TermsBlockContent({ paragraphs, listItems }: TermsBlock) {
           ))}
         </ul>
       ) : null}
+      {trailingParagraphs?.map((paragraph) => (
+        <p key={paragraph}>{renderInlineText(paragraph)}</p>
+      ))}
     </>
   );
 }
@@ -40,7 +47,10 @@ export function TermsBody({ sections, languageNotice }: TermsBodyProps) {
           <h2 className="text-base font-medium text-neutral-900">
             {section.title}
           </h2>
-          <TermsBlockContent {...section} />
+          <TermsBlockContent
+            paragraphs={section.paragraphs}
+            listItems={section.listItems}
+          />
           {section.subsections?.map((subsection) => (
             <div key={subsection.title} className="space-y-3 pl-0 sm:pl-2">
               <h3 className="text-sm font-medium text-neutral-800">
@@ -49,6 +59,7 @@ export function TermsBody({ sections, languageNotice }: TermsBodyProps) {
               <TermsBlockContent {...subsection} />
             </div>
           ))}
+          <TermsBlockContent trailingParagraphs={section.trailingParagraphs} />
         </section>
       ))}
     </div>

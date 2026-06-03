@@ -114,15 +114,6 @@ export const en: Dictionary = {
     },
     privacy: {
       title: "Privacy Policy",
-      intro:
-        "Our privacy policy for Hero: B2 German Vocabulary will be published here. This page is a placeholder for your App Store Privacy Policy URL.",
-      sections: [
-        "Data we collect",
-        "How we use your information",
-        "Third-party services",
-        "Your rights (including GDPR)",
-        "Contact for privacy requests",
-      ],
     },
     terms: {
       title: "Terms of Use",

@@ -114,15 +114,8 @@ export const de: Dictionary = {
     },
     privacy: {
       title: "Datenschutzerklärung",
-      intro:
-        "Unsere Datenschutzerklärung für Hero: B2 Beruf Vokabeln wird hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-Datenschutz-URL.",
-      sections: [
-        "Welche Daten wir erheben",
-        "Wie wir deine Informationen nutzen",
-        "Dienste von Drittanbietern",
-        "Deine Rechte (einschließlich DSGVO)",
-        "Kontakt für Datenschutzanfragen",
-      ],
+      languageNotice:
+        "Die Datenschutzerklärung ist derzeit nur auf Englisch verfügbar.",
     },
     terms: {
       title: "Nutzungsbedingungen",

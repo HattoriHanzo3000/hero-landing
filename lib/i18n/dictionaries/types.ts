@@ -101,8 +101,7 @@ export type Dictionary = {
     };
     privacy: {
       title: string;
-      intro: string;
-      sections: readonly [string, string, string, string, string];
+      languageNotice?: string;
     };
     terms: {
       title: string;
