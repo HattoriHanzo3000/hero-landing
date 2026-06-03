@@ -1,29 +1,15 @@
 import Link from "next/link";
-import { BookOpen, Briefcase } from "lucide-react";
 import { AppCard } from "./components/app-card";
 import { SiteFooter } from "./components/site-footer";
 import { SiteHeader } from "./components/site-header";
+import { getHomeApps } from "@/lib/apps/home-apps";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { getLocale } from "@/lib/i18n/get-locale";
 
 export default async function Home() {
   const locale = await getLocale();
   const dict = getDictionary(locale);
-
-  const apps = [
-    {
-      icon: BookOpen,
-      href: "/hero-einbürgerungstest",
-      accentClassName: "bg-neutral-800",
-      ...dict.home.apps.citizenship,
-    },
-    {
-      icon: Briefcase,
-      href: "/hero-b2-beruf",
-      accentClassName: "bg-neutral-600",
-      ...dict.home.apps.b2Beruf,
-    },
-  ] as const;
+  const apps = getHomeApps(dict);
 
   return (
     <div className="flex w-full flex-1 flex-col bg-[#f7f7f5] font-sans text-neutral-900">
@@ -52,22 +38,33 @@ export default async function Home() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
-            {apps.map(({ href, icon, title, subtitle, description, accentClassName }) => (
-              <Link
-                key={title}
-                href={href}
-                className="group block transition-transform active:scale-[0.99]"
-              >
-                <AppCard
-                  icon={icon}
-                  title={title}
-                  subtitle={subtitle}
-                  description={description}
-                  accentClassName={accentClassName}
-                  ctaLabel={dict.home.viewApp}
-                />
-              </Link>
-            ))}
+            {apps.map(
+              ({
+                href,
+                iconSrc,
+                iconAlt,
+                title,
+                titleAccent,
+                subtitle,
+                description,
+              }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="group flex h-full transition-transform active:scale-[0.99]"
+                >
+                  <AppCard
+                    iconSrc={iconSrc}
+                    iconAlt={iconAlt}
+                    title={title}
+                    titleAccent={titleAccent}
+                    subtitle={subtitle}
+                    description={description}
+                    ctaLabel={dict.home.viewApp}
+                  />
+                </Link>
+              ),
+            )}
           </div>
         </section>
       </main>

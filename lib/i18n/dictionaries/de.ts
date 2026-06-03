@@ -21,9 +21,7 @@ export const de: Dictionary = {
     placeholderSections: "Platzhalter-Abschnitte",
     comingSoon: "Demnächst",
     footerCopyright: "© 2025–2026 Ildar Gizatullin. Alle Rechte vorbehalten.",
-    appFooterCopyright: (year) => `© ${year} GIZATECH · Hero`,
     headerNavAria: "App-Seiten",
-    footerNavAria: "Rechtliches und Support",
   },
   home: {
     title: "Unabhängiges iOS-Entwicklungsstudio.",
@@ -33,45 +31,53 @@ export const de: Dictionary = {
     viewApp: "App ansehen",
     apps: {
       citizenship: {
-        title: "Hero: Einbürgerungstest 2026",
-        subtitle: "Einbürgerung",
+        title: "Hero:",
+        titleAccent: "Einbürgerungstest 2026",
+        subtitle: "Einbürgerungstest-Simulator",
         description:
-          "Bereite dich auf den offiziellen Einbürgerungstest vor – mit kuratierten Fragenkatalogen und fokussierten Übungseinheiten.",
+          "Vorbereitung auf „Leben in Deutschland“—310 BAMF-Fragen in 9 Themen, Smart Learning und Prüfungssimulation.",
       },
       b2Beruf: {
-        title: "Hero-Deutsch B2 Beruf",
-        subtitle: "Berufsdeutsch",
+        title: "Hero:",
+        titleAccent: "B2 Beruf Vokabeln",
+        subtitle: "Vokabeln für telc DTB B2",
         description:
-          "Baue berufsrelevantes Deutsch auf – mit Fachvokabular und strukturierten Dialogen für deine Karriere.",
+          "Vorbereitung auf B2-Berufssprache—1.881 Wörter in 12 Kapiteln, Karteikarten, eigene Wörter und telc DTB B2.",
       },
     },
   },
   b2Beruf: {
+    appName: "Hero: B2 Beruf Vokabeln",
+    metadata: {
+      title: "Hero: B2 Beruf Vokabeln",
+      description:
+        "Vokabeln für telc DTB B2—1881 Wörter nach Fokus Deutsch B2, eigene Übersetzungen, Karteikarten und mehr.",
+    },
     shell: {
-      productNav: "B2 Beruf",
+      productNav: "Hero: B2 Beruf Vokabeln",
     },
     landing: {
-      eyebrow: "Berufsdeutsch · Deutschland",
-      title: "Hero-Deutsch",
-      titleAccent: "B2 Beruf",
+      eyebrow: "Vokabeln für telc DTB B2",
+      title: "Hero:",
+      titleAccent: "B2 Beruf Vokabeln",
       description:
-        "Baue berufsrelevantes Deutsch auf B2-Niveau auf. Berufsspezifisches Vokabular, realistische Dialoge und strukturierte Lernpfade – für deine Karriere, nicht für ein weiteres Standardlehrbuch.",
+        "Baue praktischen deutschen Wortschatz für Alltag und Beruf auf und bereite dich auf den telc Deutsch-Test für den Beruf B2 vor. Orientiert an Fokus Deutsch B2—1881 Wörter in 12 Kapiteln.",
       features: [
-        "Berufsspezifisches Vokabular für deinen Bereich – keine generischen Listen",
-        "Realistische Dialoge am Arbeitsplatz und strukturierte Lernpfade",
-        "B2-Fokus für berufliche Meilensteine in Deutschland",
+        "1881 Wörter in 12 Kapiteln – orientiert an Fokus Deutsch B2",
+        "Eigene Übersetzungen, Erklärungen und Beispiele zu jedem Wort",
+        "Karteikarten, eigene Vokabeln, Widgets und PDF-Export",
       ],
       downloadCta: "Im App Store laden",
-      downloadAria: "Hero-Deutsch B2 Beruf im App Store laden",
+      downloadAria: "Hero: B2 Beruf Vokabeln im App Store laden",
       supportLink: "Hilfe nötig? Support kontaktieren",
-      cardEyebrow: "iOS · Karrierefokus",
+      cardEyebrow: "iOS · Fokus Deutsch B2",
       cardBody:
-        "Sprachenlernen, orientiert an deiner Arbeit – ruhige Oberfläche, klarer Fortschritt und Inhalte, die deine Zeit respektieren.",
+        "Der digitale Begleiter für deinen Integrations- oder Berufssprachkurs in Deutschland—ruhig, fokussiert und auf die Prüfung ausgerichtet.",
     },
     support: {
       title: "Wir helfen dir gern",
       intro:
-        "Fragen zu Hero-Deutsch B2 Beruf, deinem Konto oder der App? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.",
+        "Fragen zu Hero: B2 Beruf Vokabeln, deinem Konto oder der App? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.",
       deviceHint:
         "Bitte gib Gerätemodell und iOS-Version an, wenn du ein technisches Problem meldest – so können wir schneller helfen.",
     },
@@ -85,14 +91,14 @@ export const de: Dictionary = {
     impressum: {
       title: "Impressum",
       intro:
-        "Die Impressumsangaben für Hero-Deutsch B2 Beruf werden hier veröffentlicht. Diese Seite ist ein Platzhalter gemäß App-Store-Anforderungen.",
+        "Die Impressumsangaben für Hero: B2 Beruf Vokabeln werden hier veröffentlicht. Diese Seite ist ein Platzhalter gemäß App-Store-Anforderungen.",
       placeholderBody:
         "Firmenname, Anschrift, Registerangaben und verantwortliche Kontaktperson erscheinen in diesem Abschnitt.",
     },
     privacy: {
       title: "Datenschutzerklärung",
       intro:
-        "Unsere Datenschutzerklärung für Hero-Deutsch B2 Beruf wird hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-Datenschutz-URL.",
+        "Unsere Datenschutzerklärung für Hero: B2 Beruf Vokabeln wird hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-Datenschutz-URL.",
       sections: [
         "Welche Daten wir erheben",
         "Wie wir deine Informationen nutzen",
@@ -104,7 +110,7 @@ export const de: Dictionary = {
     terms: {
       title: "Nutzungsbedingungen",
       intro:
-        "Die vollständigen Nutzungsbedingungen für Hero-Deutsch B2 Beruf werden hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-EULA-URL.",
+        "Die vollständigen Nutzungsbedingungen für Hero: B2 Beruf Vokabeln werden hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-EULA-URL.",
       sections: [
         "Annahme der Bedingungen",
         "Lizenz und zulässige Nutzung",
@@ -115,31 +121,37 @@ export const de: Dictionary = {
     },
   },
   citizenship: {
+    appName: "Hero: Einbürgerungstest 2026",
+    metadata: {
+      title: "Hero: Einbürgerungstest 2026",
+      description:
+        "Vorbereitung auf „Leben in Deutschland“ – 310 BAMF-Fragen in 9 Themen, Spaced Repetition, 4 Sprachen und Prüfungssimulation.",
+    },
     shell: {
-      productNav: "Einbürgerungstest",
+      productNav: "Hero: Einbürgerungstest 2026",
     },
     landing: {
-      eyebrow: "Einbürgerung · Deutschland",
-      title: "Hero: Einbürgerungstest",
-      titleAccent: "2026",
+      eyebrow: "Einbürgerungstest-Simulator",
+      title: "Hero:",
+      titleAccent: "Einbürgerungstest 2026",
       description:
-        "Bereite dich mit Ruhe auf den offiziellen Einbürgerungstest vor. Kuratierte Fragenkataloge, fokussiertes Üben und Fortschritt ohne Ballast – für den nächsten Schritt.",
+        "Warum dich durch ungeordnete Fragenlisten quälen? Hero 2.0 strukturiert alle 310 BAMF-Fragen logisch – damit du den Test „Leben in Deutschland“ nicht nur bestehst, sondern verstehst. Jetzt auf Deutsch, Englisch, Russisch und Türkisch.",
       features: [
-        "Prüfungsnahe Fragenkataloge für den Zyklus 2026",
-        "Fokussierte Übungseinheiten mit klarem, ruhigem Feedback",
-        "Fortschritt, dem du vertrauen kannst – ohne Ablenkung",
+        "9 Logik-Themen: 310 offizielle Fragen strukturiert statt ungeordnet",
+        "Smart Learning (SRS): Schwächen merken, optimal wiederholen",
+        "Echte Prüfungssimulation: 33 Fragen, 60 Minuten, inkl. Landesfragen",
       ],
       downloadCta: "Im App Store laden",
       downloadAria: "Hero: Einbürgerungstest 2026 im App Store laden",
       supportLink: "Hilfe nötig? Support kontaktieren",
-      cardEyebrow: "iOS · Premium-Lernen",
+      cardEyebrow: "iOS · 4 Sprachen",
       cardBody:
-        "Für alle, die Klarheit wollen – kein überladenes Lehrbuch. Übe, wann es passt; sieh, wie weit du gekommen bist.",
+        "Faires Freemium – erste Themen, SRS und Simulationen kostenlos testen. Pro flexibel freischalten, inkl. Launch-Angebot für lebenslangen Zugang.",
     },
     support: {
       title: "Wir helfen dir gern",
       intro:
-        "Fragen zu Hero: Einbürgerungstest, deinem Konto oder der App? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.",
+        "Fragen zu Hero: Einbürgerungstest 2026, deinem Konto oder der App? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.",
       deviceHint:
         "Bitte gib Gerätemodell und iOS-Version an, wenn du ein technisches Problem meldest – so können wir schneller helfen.",
     },
@@ -153,14 +165,14 @@ export const de: Dictionary = {
     impressum: {
       title: "Impressum",
       intro:
-        "Die Impressumsangaben für Hero: Einbürgerungstest werden hier veröffentlicht. Diese Seite ist ein Platzhalter gemäß App-Store-Anforderungen.",
+        "Die Impressumsangaben für Hero: Einbürgerungstest 2026 werden hier veröffentlicht. Diese Seite ist ein Platzhalter gemäß App-Store-Anforderungen.",
       placeholderBody:
         "Firmenname, Anschrift, Registerangaben und verantwortliche Kontaktperson erscheinen in diesem Abschnitt.",
     },
     privacy: {
       title: "Datenschutzerklärung",
       intro:
-        "Unsere Datenschutzerklärung für Hero: Einbürgerungstest wird hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-Datenschutz-URL.",
+        "Unsere Datenschutzerklärung für Hero: Einbürgerungstest 2026 wird hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-Datenschutz-URL.",
       sections: [
         "Welche Daten wir erheben",
         "Wie wir deine Informationen nutzen",
@@ -172,7 +184,7 @@ export const de: Dictionary = {
     terms: {
       title: "Nutzungsbedingungen",
       intro:
-        "Die vollständigen Nutzungsbedingungen für Hero: Einbürgerungstest werden hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-EULA-URL.",
+        "Die vollständigen Nutzungsbedingungen für Hero: Einbürgerungstest 2026 werden hier veröffentlicht. Diese Seite ist ein Platzhalter für die App-Store-EULA-URL.",
       sections: [
         "Annahme der Bedingungen",
         "Lizenz und zulässige Nutzung",

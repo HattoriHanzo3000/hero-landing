@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { getLocale } from "@/lib/i18n/get-locale";
 
-export const metadata: Metadata = {
-  title: "Hero-Deutsch B2 Beruf",
-  description:
-    "Build workplace-ready German at B2 level with profession-specific vocabulary, realistic dialogues, and structured career paths.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const { metadata } = getDictionary(locale).b2Beruf;
+
+  return {
+    title: metadata.title,
+    description: metadata.description,
+  };
+}
 
 export default function HeroB2BerufLayout({
   children,

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { LanguageSwitcher } from "@/app/components/language-switcher";
+import { SiteFooter } from "@/app/components/site-footer";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { getLocale } from "@/lib/i18n/get-locale";
 import type { ProductKey } from "@/lib/i18n/dictionaries/types";
@@ -22,7 +22,6 @@ export async function ProductAppShell({
   const productDict = dict[product];
   const basePath = PRODUCT_BASE_PATH[product];
   const footerLinks = productNavLinks(product, dict.common.nav);
-  const year = new Date().getFullYear();
 
   return (
     <div className="flex w-full flex-1 flex-col bg-[#f7f7f5] font-sans text-neutral-900">
@@ -69,35 +68,7 @@ export async function ProductAppShell({
         {children}
       </main>
 
-      <footer className="mx-auto w-full max-w-6xl border-t border-neutral-200/80 px-6 py-10 md:px-10 md:py-12">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-neutral-400">
-            {dict.common.appFooterCopyright(year)}
-          </p>
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
-            <nav
-              className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-neutral-400"
-              aria-label={dict.common.footerNavAria}
-            >
-              {footerLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="transition-colors hover:text-neutral-600"
-                >
-                  {label}
-                </Link>
-              ))}
-            </nav>
-            <LanguageSwitcher
-              locale={locale}
-              label={dict.language.switcherLabel}
-              enLabel="EN"
-              deLabel="DE"
-            />
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

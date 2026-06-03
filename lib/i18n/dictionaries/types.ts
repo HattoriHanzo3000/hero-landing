@@ -21,9 +21,7 @@ export type Dictionary = {
     placeholderSections: string;
     comingSoon: string;
     footerCopyright: string;
-    appFooterCopyright: (year: number) => string;
     headerNavAria: string;
-    footerNavAria: string;
   };
   home: {
     title: string;
@@ -33,17 +31,24 @@ export type Dictionary = {
     apps: {
       citizenship: {
         title: string;
+        titleAccent: string;
         subtitle: string;
         description: string;
       };
       b2Beruf: {
         title: string;
+        titleAccent: string;
         subtitle: string;
         description: string;
       };
     };
   };
   b2Beruf: {
+    appName: string;
+    metadata: {
+      title: string;
+      description: string;
+    };
     shell: {
       productNav: string;
     };
@@ -87,6 +92,11 @@ export type Dictionary = {
     };
   };
   citizenship: {
+    appName: string;
+    metadata: {
+      title: string;
+      description: string;
+    };
     shell: {
       productNav: string;
     };

@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { getLocale } from "@/lib/i18n/get-locale";
 
-export const metadata: Metadata = {
-  title: "Hero: Einbürgerungstest 2026",
-  description:
-    "Prepare for Germany's official naturalization test with curated questions, focused practice, and clear progress.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const { metadata } = getDictionary(locale).citizenship;
+
+  return {
+    title: metadata.title,
+    description: metadata.description,
+  };
+}
 
 export default function HeroEinbuergerungstestLayout({
   children,

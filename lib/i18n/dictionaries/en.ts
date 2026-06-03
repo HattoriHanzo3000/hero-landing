@@ -21,9 +21,7 @@ export const en: Dictionary = {
     placeholderSections: "Placeholder sections",
     comingSoon: "Coming soon",
     footerCopyright: "© 2025–2026 Ildar Gizatullin. All rights reserved.",
-    appFooterCopyright: (year) => `© ${year} GIZATECH · Hero`,
     headerNavAria: "App pages",
-    footerNavAria: "Legal and support",
   },
   home: {
     title: "Independent iOS development studio.",
@@ -33,45 +31,53 @@ export const en: Dictionary = {
     viewApp: "View app",
     apps: {
       citizenship: {
-        title: "Hero: Einbürgerungstest 2026",
-        subtitle: "Citizenship",
+        title: "Hero:",
+        titleAccent: "German Citizenship 2026",
+        subtitle: "Citizenship test simulator",
         description:
-          "Prepare for Germany's official naturalization test with curated question banks and focused practice sessions.",
+          "Prepare for the Life in Germany test—310 official questions in 9 themes, smart repetition, and exam simulation.",
       },
       b2Beruf: {
-        title: "Hero-Deutsch B2 Beruf",
-        subtitle: "Professional German",
+        title: "Hero:",
+        titleAccent: "B2 German Vocabulary",
+        subtitle: "Vocabulary for telc DTB B2",
         description:
-          "Build workplace-ready German vocabulary and structured dialogues designed for your professional career.",
+          "Prepare for workplace German at B2—1,881 words in 12 chapters, flashcards, custom vocabulary, and telc DTB B2.",
       },
     },
   },
   b2Beruf: {
+    appName: "Hero: B2 German Vocabulary",
+    metadata: {
+      title: "Hero: B2 German Vocabulary",
+      description:
+        "Vocabulary for telc DTB B2—1,881 words aligned with Fokus Deutsch B2, your own translations, flashcards, and more.",
+    },
     shell: {
-      productNav: "B2 Beruf",
+      productNav: "Hero: B2 German Vocabulary",
     },
     landing: {
-      eyebrow: "Professional German · Germany",
-      title: "Hero-Deutsch",
-      titleAccent: "B2 Beruf",
+      eyebrow: "Vocabulary for telc DTB B2",
+      title: "Hero:",
+      titleAccent: "B2 German Vocabulary",
       description:
-        "Build workplace-ready German at B2 level. Profession-specific vocabulary, realistic dialogues, and structured paths—for your career, not another generic textbook.",
+        "Build practical German vocabulary for everyday life and work—and prepare for the telc Deutsch-Test für den Beruf B2. Structured around Fokus Deutsch B2, with 1,881 words across 12 chapters.",
       features: [
-        "Profession-specific vocabulary for your field—not generic lists",
-        "Realistic workplace dialogues and structured learning paths",
-        "B2-level focus designed for career milestones in Germany",
+        "1,881 words in 12 chapters—aligned with Fokus Deutsch B2",
+        "Your own translations, explanations, and examples for every word",
+        "Flashcards, custom vocabulary, widgets, and PDF export",
       ],
       downloadCta: "Download on the App Store",
-      downloadAria: "Download Hero-Deutsch B2 Beruf on the App Store",
+      downloadAria: "Download Hero: B2 German Vocabulary on the App Store",
       supportLink: "Need help? Contact support",
-      cardEyebrow: "iOS · Career-focused",
+      cardEyebrow: "iOS · Fokus Deutsch B2",
       cardBody:
-        "Language learning shaped around how you actually work—calm interface, clear progress, and content that respects your time.",
+        "The digital companion for your integration or professional language course in Germany—calm, focused, and built for real exam prep.",
     },
     support: {
       title: "We're here to help",
       intro:
-        "Questions about Hero-Deutsch B2 Beruf, your account, or the app? Reach our team directly—we typically respond within one business day.",
+        "Questions about Hero: B2 German Vocabulary, your account, or the app? Reach our team directly—we typically respond within one business day.",
       deviceHint:
         "Please include your device model and iOS version if you're reporting a technical issue—it helps us resolve things faster.",
     },
@@ -85,14 +91,14 @@ export const en: Dictionary = {
     impressum: {
       title: "Impressum",
       intro:
-        "Legal disclosure content for Hero-Deutsch B2 Beruf will be published here. This page is a placeholder aligned with App Store requirements.",
+        "Legal disclosure content for Hero: B2 German Vocabulary will be published here. This page is a placeholder aligned with App Store requirements.",
       placeholderBody:
         "Company name, address, registration details, and responsible contact will appear in this section.",
     },
     privacy: {
       title: "Privacy Policy",
       intro:
-        "Our privacy policy for Hero-Deutsch B2 Beruf will be published here. This page is a placeholder for your App Store Privacy Policy URL.",
+        "Our privacy policy for Hero: B2 German Vocabulary will be published here. This page is a placeholder for your App Store Privacy Policy URL.",
       sections: [
         "Data we collect",
         "How we use your information",
@@ -104,7 +110,7 @@ export const en: Dictionary = {
     terms: {
       title: "Terms of Use",
       intro:
-        "The full terms governing use of Hero-Deutsch B2 Beruf will be published here. This page is a placeholder for your App Store Terms of Use (EULA) URL.",
+        "The full terms governing use of Hero: B2 German Vocabulary will be published here. This page is a placeholder for your App Store Terms of Use (EULA) URL.",
       sections: [
         "Acceptance of terms",
         "License and permitted use",
@@ -115,31 +121,37 @@ export const en: Dictionary = {
     },
   },
   citizenship: {
+    appName: "Hero: German Citizenship 2026",
+    metadata: {
+      title: "Hero: German Citizenship 2026",
+      description:
+        "Prepare for the Life in Germany test—310 BAMF questions in 9 themes, spaced repetition, 4 languages, and exam simulation.",
+    },
     shell: {
-      productNav: "Einbürgerungstest",
+      productNav: "Hero: German Citizenship 2026",
     },
     landing: {
-      eyebrow: "Citizenship · Germany",
-      title: "Hero: Einbürgerungstest",
-      titleAccent: "2026",
+      eyebrow: "Citizenship test simulator",
+      title: "Hero:",
+      titleAccent: "German Citizenship 2026",
       description:
-        "Prepare with confidence for Germany's official naturalization test. Curated question banks, focused practice, and progress designed with restraint—for the milestone ahead.",
+        "Don't just memorize—master the Life in Germany test. Hero 2.0 organizes all 310 official questions into a structured learning system. Now in German, English, Russian, and Turkish.",
       features: [
-        "Official-style question banks aligned for the 2026 exam cycle",
-        "Focused practice sessions with clear, calm feedback",
-        "Progress you can trust—no clutter, no noise",
+        "9 topic themes: all 310 official questions, structured—not scattered lists",
+        "Smart Learning (SRS): weak spots repeated at the perfect time",
+        "Real exam simulation: 33 questions, 60 minutes, including your federal state",
       ],
       downloadCta: "Download on the App Store",
-      downloadAria: "Download Hero: Einbürgerungstest 2026 on the App Store",
+      downloadAria: "Download Hero: German Citizenship 2026 on the App Store",
       supportLink: "Need help? Contact support",
-      cardEyebrow: "iOS · Premium study",
+      cardEyebrow: "iOS · 4 languages",
       cardBody:
-        "Built for people who want clarity—not another overwhelming textbook. Practice when it suits you; see how far you've come.",
+        "Fair freemium—try the first topics, SRS, and exam simulations free. Unlock Pro flexibly, including our lifetime launch offer.",
     },
     support: {
       title: "We're here to help",
       intro:
-        "Questions about Hero: Einbürgerungstest, your account, or the app? Reach our team directly—we typically respond within one business day.",
+        "Questions about Hero: German Citizenship 2026, your account, or the app? Reach our team directly—we typically respond within one business day.",
       deviceHint:
         "Please include your device model and iOS version if you're reporting a technical issue—it helps us resolve things faster.",
     },
@@ -153,14 +165,14 @@ export const en: Dictionary = {
     impressum: {
       title: "Impressum",
       intro:
-        "Legal disclosure content for Hero: Einbürgerungstest will be published here. This page is a placeholder aligned with App Store requirements.",
+        "Legal disclosure content for Hero: German Citizenship 2026 will be published here. This page is a placeholder aligned with App Store requirements.",
       placeholderBody:
         "Company name, address, registration details, and responsible contact will appear in this section.",
     },
     privacy: {
       title: "Privacy Policy",
       intro:
-        "Our privacy policy for Hero: Einbürgerungstest will be published here. This page is a placeholder for your App Store Privacy Policy URL.",
+        "Our privacy policy for Hero: German Citizenship 2026 will be published here. This page is a placeholder for your App Store Privacy Policy URL.",
       sections: [
         "Data we collect",
         "How we use your information",
@@ -172,7 +184,7 @@ export const en: Dictionary = {
     terms: {
       title: "Terms of Use",
       intro:
-        "The full terms governing use of Hero: Einbürgerungstest will be published here. This page is a placeholder for your App Store Terms of Use (EULA) URL.",
+        "The full terms governing use of Hero: German Citizenship 2026 will be published here. This page is a placeholder for your App Store Terms of Use (EULA) URL.",
       sections: [
         "Acceptance of terms",
         "License and permitted use",
