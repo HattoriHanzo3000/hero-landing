@@ -5,6 +5,7 @@ export const de: Dictionary = {
     switcherLabel: "Sprache",
     en: "Englisch",
     de: "Deutsch",
+    ru: "Russisch",
   },
   common: {
     nav: {
@@ -40,25 +41,24 @@ export const de: Dictionary = {
     },
   },
   home: {
-    title: "Unabhängiges iOS-Entwicklungsstudio.",
+    title: "Smarte Apps für dein Leben in Deutschland.",
     subtitle:
-      "Entwickler der Hero-App-Reihe. Wir bauen fokussierte, hochwertige Erlebnisse für Sprache und Integration.",
-    projectsHeading: "Ausgewählte Projekte",
+      "Ich habe die Hero-App-Reihe basierend auf meinen eigenen Erfahrungen nach dem Umzug nach Deutschland entwickelt. Dies sind hochwertige iOS-Tools, die dir helfen, deine Prüfungen zu bestehen, die Sprache zu meistern und dich sicher zu integrieren.",
     viewApp: "App ansehen",
     apps: {
       citizenship: {
-        title: "Hero:",
-        titleAccent: "Einbürgerungstest 2026",
+        goalTitle: "Werde deutscher Staatsbürger",
+        appName: "Hero: Einbürgerungstest 2026",
         subtitle: "Einbürgerungstest-Simulator",
         description:
-          "Vorbereitung auf „Leben in Deutschland“—310 BAMF-Fragen in 9 Themen, Smart Learning und Prüfungssimulation.",
+          "Nicht nur auswendig lernen, sondern verstehen. 310 BAMF-Fragen in logischen Themen, Smart Learning und Unterstützung in 4 Sprachen für deine Prüfung.",
       },
       b2Beruf: {
-        title: "Hero:",
-        titleAccent: "B2 Beruf Vokabeln",
+        goalTitle: "Meistere Deutsch für den Beruf",
+        appName: "Hero: B2 Beruf Vokabeln",
         subtitle: "Vokabeln für telc DTB B2",
         description:
-          "Vorbereitung auf B2-Berufssprache—1.881 Wörter in 12 Kapiteln, Karteikarten, eigene Wörter und telc DTB B2.",
+          "Der perfekte digitale Begleiter für deinen Sprachkurs. Lerne 1.881 wichtige Wörter, trage eigene Übersetzungen ein und bereite dich gezielt auf den telc-Test vor.",
       },
     },
   },

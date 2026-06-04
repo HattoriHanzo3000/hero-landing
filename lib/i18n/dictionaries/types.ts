@@ -5,6 +5,7 @@ export type Dictionary = {
     switcherLabel: string;
     en: string;
     de: string;
+    ru: string;
   };
   common: {
     nav: {
@@ -41,18 +42,17 @@ export type Dictionary = {
   home: {
     title: string;
     subtitle: string;
-    projectsHeading: string;
     viewApp: string;
     apps: {
       citizenship: {
-        title: string;
-        titleAccent: string;
+        goalTitle: string;
+        appName: string;
         subtitle: string;
         description: string;
       };
       b2Beruf: {
-        title: string;
-        titleAccent: string;
+        goalTitle: string;
+        appName: string;
         subtitle: string;
         description: string;
       };

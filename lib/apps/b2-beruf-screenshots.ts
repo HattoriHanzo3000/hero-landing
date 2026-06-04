@@ -10,9 +10,14 @@ const B2_SCREENSHOTS_BASE = "/apps/b2-beruf/screenshots";
 export const B2_SCREENSHOT_WIDTH = 500;
 export const B2_SCREENSHOT_HEIGHT = 1125;
 
+/** Screenshot folders exist for en and de only; ru uses en assets. */
+function b2ScreenshotLocale(locale: Locale): "en" | "de" {
+  return locale === "de" ? "de" : "en";
+}
+
 export function getB2ScreenshotSrc(
   id: B2ScreenshotId,
   locale: Locale,
 ): string {
-  return `${B2_SCREENSHOTS_BASE}/${locale}/${id}.webp`;
+  return `${B2_SCREENSHOTS_BASE}/${b2ScreenshotLocale(locale)}/${id}.webp`;
 }

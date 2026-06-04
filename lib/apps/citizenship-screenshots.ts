@@ -19,9 +19,14 @@ const CITIZENSHIP_SCREENSHOTS_BASE =
 export const CITIZENSHIP_SCREENSHOT_WIDTH = 500;
 export const CITIZENSHIP_SCREENSHOT_HEIGHT = 1125;
 
+/** Screenshot folders exist for en and de only; ru uses en assets. */
+function citizenshipScreenshotLocale(locale: Locale): "en" | "de" {
+  return locale === "de" ? "de" : "en";
+}
+
 export function getCitizenshipScreenshotSrc(
   id: CitizenshipScreenshotId,
   locale: Locale,
 ): string {
-  return `${CITIZENSHIP_SCREENSHOTS_BASE}/${locale}/${id}.webp`;
+  return `${CITIZENSHIP_SCREENSHOTS_BASE}/${citizenshipScreenshotLocale(locale)}/${id}.webp`;
 }

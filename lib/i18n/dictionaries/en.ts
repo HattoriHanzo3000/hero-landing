@@ -5,6 +5,7 @@ export const en: Dictionary = {
     switcherLabel: "Language",
     en: "English",
     de: "German",
+    ru: "Russian",
   },
   common: {
     nav: {
@@ -40,25 +41,24 @@ export const en: Dictionary = {
     },
   },
   home: {
-    title: "Independent iOS development studio.",
+    title: "Focused apps for your life in Germany.",
     subtitle:
-      "Creator of the Hero app series. We build focused, high-craft experiences for language and integration.",
-    projectsHeading: "Selected Projects",
+      "I built the Hero app series based on my own experience of moving to Germany. These are high-craft iOS tools designed to help you pass your exams, master the language, and integrate with confidence.",
     viewApp: "View app",
     apps: {
       citizenship: {
-        title: "Hero:",
-        titleAccent: "German Citizenship 2026",
+        goalTitle: "Become a German Citizen",
+        appName: "Hero: Einbürgerungstest 2026",
         subtitle: "Citizenship test simulator",
         description:
-          "Prepare for the Life in Germany test—310 official questions in 9 themes, smart repetition, and exam simulation.",
+          "Don't just memorize—master the 'Life in Germany' test. Features 310 official questions logically grouped, smart repetition, and support in 4 languages.",
       },
       b2Beruf: {
-        title: "Hero:",
-        titleAccent: "B2 German Vocabulary",
+        goalTitle: "Master Professional German",
+        appName: "Hero: B2 Beruf Vokabeln",
         subtitle: "Vocabulary for telc DTB B2",
         description:
-          "Prepare for workplace German at B2—1,881 words in 12 chapters, flashcards, custom vocabulary, and telc DTB B2.",
+          "The perfect digital companion for your language course. Learn 1,881 essential words, add your own translations, and prepare confidently for the telc exam.",
       },
     },
   },

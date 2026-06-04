@@ -1,15 +1,17 @@
 "use client";
 
+import { Fragment } from "react";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 import { setLocale } from "@/app/actions/set-locale";
-import type { Locale } from "@/lib/i18n/config";
+import { LOCALES, type Locale } from "@/lib/i18n/config";
 
 type LanguageSwitcherProps = {
   locale: Locale;
   label: string;
   enLabel: string;
   deLabel: string;
+  ruLabel: string;
 };
 
 export function LanguageSwitcher({
@@ -17,9 +19,12 @@ export function LanguageSwitcher({
   label,
   enLabel,
   deLabel,
+  ruLabel,
 }: LanguageSwitcherProps) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
+
+  const localeLabels: Record<Locale, string> = { en: enLabel, de: deLabel, ru: ruLabel };
 
   function switchTo(next: Locale) {
     if (next === locale || isPending) {
@@ -42,27 +47,24 @@ export function LanguageSwitcher({
       aria-label={label}
       className="inline-flex items-center gap-2 text-xs tracking-wide"
     >
-      <button
-        type="button"
-        onClick={() => switchTo("en")}
-        disabled={isPending}
-        aria-current={locale === "en" ? "true" : undefined}
-        className={locale === "en" ? activeClass : inactiveClass}
-      >
-        {enLabel}
-      </button>
-      <span className="text-neutral-300" aria-hidden>
-        |
-      </span>
-      <button
-        type="button"
-        onClick={() => switchTo("de")}
-        disabled={isPending}
-        aria-current={locale === "de" ? "true" : undefined}
-        className={locale === "de" ? activeClass : inactiveClass}
-      >
-        {deLabel}
-      </button>
+      {LOCALES.map((code, index) => (
+        <Fragment key={code}>
+          {index > 0 ? (
+            <span className="text-neutral-300" aria-hidden>
+              |
+            </span>
+          ) : null}
+          <button
+            type="button"
+            onClick={() => switchTo(code)}
+            disabled={isPending}
+            aria-current={locale === code ? "true" : undefined}
+            className={locale === code ? activeClass : inactiveClass}
+          >
+            {localeLabels[code]}
+          </button>
+        </Fragment>
+      ))}
     </div>
   );
 }
