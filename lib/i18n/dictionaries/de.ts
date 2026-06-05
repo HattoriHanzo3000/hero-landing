@@ -76,15 +76,15 @@ export const de: Dictionary = {
       productNav: APP_NAMES.b2Beruf.full,
     },
     landing: {
-      eyebrow: "Vokabeln für telc DTB B2",
+      eyebrow: "Digitaler Begleiter für den Berufssprachkurs",
       title: APP_NAMES.b2Beruf.title,
       titleAccent: APP_NAMES.b2Beruf.accent,
       description:
-        "Baue praktischen deutschen Wortschatz für Alltag und Beruf auf und bereite dich auf den telc Deutsch-Test für den Beruf B2 vor. Orientiert an Fokus Deutsch B2—1881 Wörter in 12 Kapiteln.",
+        "Lass das schwere Lehrbuch zu Hause. Der perfekte digitale Begleiter für deinen Integrationskurs, der den „Fokus Deutsch“ B2-Wortschatz in ein smartes, interaktives Lernsystem verwandelt.",
       features: [
-        "1881 Wörter in 12 Kapiteln – orientiert an Fokus Deutsch B2",
-        "Eigene Übersetzungen, Erklärungen und Beispiele zu jedem Wort",
-        "Karteikarten, eigene Vokabeln, Widgets und PDF-Export",
+        "1.881 kursbegleitende Wörter: Exakt strukturiert nach den 12 Kapiteln deines offiziellen Lehrbuchs.",
+        "Personalisiertes Lernen: Trage eigene Übersetzungen ein und füge mit „Meine Wörter“ Vokabeln aus deinem Arbeitsalltag hinzu.",
+        "Smartes Üben & Cloud-Sync: Lerne effektiv mit Spaced Repetition und synchronisiere deinen Fortschritt nahtlos auf iPhone, iPad und Mac.",
       ],
       downloadCta: "Im App Store laden",
       downloadAria: `${APP_NAMES.b2Beruf.full} im App Store laden`,
@@ -108,16 +108,111 @@ export const de: Dictionary = {
         "Bitte gib Gerätemodell und iOS-Version an, wenn du ein technisches Problem meldest – so können wir schneller helfen.",
     },
     faq: {
-      heading: "FAQ folgt in Kürze",
-      items: [],
+      heading: "Häufig gestellte Fragen",
+      items: [
+        {
+          question: "Ist diese App mit einem bestimmten Lehrbuch verbunden?",
+          answer:
+            "Die App ist als perfekter digitaler Begleiter zum „Fokus Deutsch“ B2-Lehrplan konzipiert. Sie enthält 1.881 Wörter, die auf die 12 Kapitel des Buches abgestimmt sind. Hinweis: Hero ist eine unabhängige App und ist nicht mit dem Cornelsen Verlag oder der telc gGmbH verbunden oder wird von diesen unterstützt.",
+        },
+        {
+          question: "Ist die App kostenlos?",
+          answer:
+            "Du kannst die App herunterladen und die erste Lektion sowie ausgewählte Präpositionslisten kostenlos testen. Um alle 12 Kapitel, das volle Karteikarten-Training und Funktionen für eigene Vokabeln freizuschalten, kannst du per Abo oder einmaligem Lebenszeit-Kauf auf Hero Pro upgraden.",
+        },
+        {
+          question: "Wie funktionieren die Karteikarten und Lernmodi?",
+          answer:
+            "Die App nutzt einen Smart Learning-Algorithmus (Spaced Repetition), um dir schwierigere Wörter öfter und leichtere seltener anzuzeigen. Du kannst in drei Modi üben: Übersetzung, Erklärung (Deutsch-Deutsch) und Synonyme.",
+        },
+        {
+          question: "Kann ich meine eigenen Wörter hinzufügen?",
+          answer:
+            "Ja! Mit der Funktion „Meine Wörter“ (in Hero Pro enthalten) kannst du deinen persönlichen Wortschatz aufbauen. Füge Wörter hinzu, die du bei der Arbeit hörst, ergänze eigene Übersetzungen sowie Beispiele und übe sie mit dem Karteikarten-System.",
+        },
+        {
+          question: "Wird mein Fortschritt auf allen meinen Geräten synchronisiert?",
+          answer:
+            "Ja. Wenn du die iCloud-Synchronisierung in den Einstellungen aktivierst, bleiben dein gesamter Lernfortschritt, eigene Übersetzungen, Favoriten und „Meine Wörter“ auf deinem iPhone, iPad und Mac automatisch auf dem neuesten Stand.",
+        },
+      ],
       moreQuestions: "Noch Fragen?",
       pageContactPrompt: "Noch Fragen oder brauchst du Hilfe?",
       fullFaqLink: "Lies unsere vollständigen FAQ",
       or: "oder",
       contactSupport: "Kontaktiere den Support",
-      bodyBefore:
-        "Wir bereiten klare Antworten auf die häufigsten Fragen vor. Bis dahin erreichst du uns unter ",
-      bodyAfter: ".",
+      pageItems: [
+        {
+          question: "Was ist Hero – Deutsch B2 Beruf?",
+          answer:
+            "Hero – Deutsch B2 Beruf ist eine native iOS-App zum Lernen von professionellem Deutsch auf B2-Niveau. Sie hilft dir, Vokabeln für den Arbeitsplatz und den Berufssprachkurs aufzubauen: strukturierte Kapitel, Verben und Adjektive mit Präpositionen, Karteikarten mit Spaced Repetition (intervallbasiertem Lernen) und Tools, um deinen Fortschritt zu verfolgen.",
+        },
+        {
+          question: "Welche Vokabeln sind enthalten?",
+          answer:
+            "Die App umfasst drei Hauptbereiche: Allgemeine Wörter (12 Lektionen mit berufsbezogenen Themen), Verben mit Präpositionen (Listen nach Präpositionen wie an, auf, bei, …) und Adjektive mit Präpositionen. Du kannst Wortlisten öffnen, Erklärungen und Beispiele lesen, deine eigenen Übersetzungen hinzufügen und mit Karteikarten üben.",
+        },
+        {
+          question: "Wie funktionieren die Karteikarten und Spaced Repetition?",
+          answer:
+            "Im Lernmodus wiederholst du Wörter als Karteikarten. Die App nutzt Spaced Repetition: Wörter, die dir schwerer fallen, kommen früher wieder; Wörter, die du gut kennst, erscheinen seltener. Deine Antworten werden gespeichert, sodass du nach dem Schließen der App genau dort weitermachen kannst, wo du aufgehört hast.",
+        },
+        {
+          question: "Welche Lernmodi gibt es?",
+          answer:
+            "Du kannst jedes Wort in drei Modi üben: Übersetzung (deine eigene oder die vorgeschlagene Übersetzung), Erklärung (kurze deutsche Erklärung) und Synonym (verwandte Wörter). Wechsle die Modi im Lernbereich, um verschiedene Fähigkeiten zu trainieren.",
+        },
+        {
+          question: "Was ist kostenlos und was schaltet Hero Pro frei?",
+          answer:
+            "In der kostenlosen Version kannst du die App mit eingeschränkten Übungsinhalten erkunden: Allgemeine Wörter Lektion 1 sowie die „an“-Abschnitte für Verben und Adjektive. Hero Pro schaltet alle Lektionen und Präpositionslisten, das vollständige Karteikarten-Training, „Meine Wörter“ (persönliches Vokabular) und erweiterte Quellen für das „Wort des Tages“ frei. Du kannst jederzeit über die Paywall oder unter Einstellungen → Dein Tarif upgraden.",
+        },
+        {
+          question: "Was sind „Meine Wörter“ und Favoriten?",
+          answer:
+            "Mit Favoriten kannst du Wörter aus jeder Liste für eine schnelle Wiederholung markieren. „Meine Wörter“ ist dein persönliches Vokabular: Füge eigene Einträge hinzu, bearbeite und lösche sie (nur in Hero Pro). Beide können im Lernmodus verwendet werden und erscheinen in der globalen Suche. Von unterstützten Bildschirmen aus kannst du Wortlisten als PDF exportieren.",
+        },
+        {
+          question: "Was ist das Cockpit?",
+          answer:
+            "Der Cockpit-Tab zeigt deine Lernübersicht: den Fortschritt über alle Vokabeln hinweg, Statistiken, Einstellungen für das „Wort des Tages“ und Shortcuts, um direkt weiterzulernen. Du kannst den Fokus deines Fortschritts auf die App-Vokabeln oder auf „Meine Wörter“ legen.",
+        },
+        {
+          question: "Was ist das „Wort des Tages“?",
+          answer:
+            "Das „Wort des Tages“ hebt eine Vokabel im Header der Startseite und im Widget hervor. Du kannst es ein- oder ausschalten und auswählen, aus welchen Abschnitten das tägliche Wort stammen soll (kostenlose Nutzer: eingeschränkte Abschnitte; Pro: gesamte Bibliothek). Das Wort wird nach einem Zeitplan aktualisiert, den du in den Einstellungen festlegst.",
+        },
+        {
+          question: "Kann ich die gesamte Bibliothek durchsuchen?",
+          answer:
+            "Ja. Der Suchen-Tab findet Wörter in den Bereichen Allgemeine Wörter, Verben, Adjektive, Meine Wörter und Favoriten. Die Ergebnisse zeigen den Kontext (z. B. Verb vs. Adjektiv vs. dein eigenes Wort), sodass du direkt zur richtigen Liste springen kannst.",
+        },
+        {
+          question: "Welche Widgets und Schnellaktionen sind enthalten?",
+          answer:
+            "Die App enthält ein Home-Bildschirm-Widget für das „Wort des Tages“, ein Sperrbildschirm-Widget für Karteikarten und (ab iOS 18) ein Steuerelement für das Kontrollzentrum, um schnell ein Wort zu „Meine Wörter“ hinzuzufügen. Die Widgets bleiben über gemeinsame App-Daten mit der Haupt-App synchronisiert.",
+        },
+        {
+          question: "Wird mein Fortschritt auf allen Geräten synchronisiert?",
+          answer:
+            "Ja, optional. Unter Einstellungen → iCloud kannst du die Synchronisierung aktivieren, sodass Übersetzungen, Favoriten, der Fortschritt der Spaced Repetition und „Meine Wörter“ über iCloud zwischen deinen Apple-Geräten synchronisiert werden. Du musst mit derselben Apple-ID angemeldet sein und iCloud aktiviert haben. Die Kursinhalte (JSON-Vokabeln) sind fest in die App integriert; synchronisiert werden ausschließlich deine persönlichen Lerndaten.",
+        },
+        {
+          question: "Welche Sprachen unterstützt die App?",
+          answer:
+            "Die Benutzeroberfläche der App ist auf Deutsch und Englisch verfügbar (Einstellungen → App-Sprache). Die Vokabelinhalte sind auf Deutsch, mit Übersetzungen und Lernhilfen, die auf das professionelle Deutsch auf B2-Niveau zugeschnitten sind.",
+        },
+        {
+          question: "Wie funktionieren die Hero Pro-Abonnements?",
+          answer:
+            "Hero Pro ist als Monats- oder Jahresabo erhältlich (das Jahresabo kann eine kostenlose Testphase beinhalten — siehe App Store) oder als einmaliger Lebenszeit-Kauf (Lifetime). Die Bezahlung wird über Apple abgewickelt; du kannst dein Abo unter Einstellungen → Dein Tarif oder im App Store → Abonnements verwalten oder kündigen. Nutze „Käufe wiederherstellen“, wenn du die App neu installierst oder das Gerät wechselst. Abos können mit deiner iCloud-Familie geteilt werden, sofern Apple dies zulässt. Bei Abrechnungsproblemen wende dich bitte an den Apple Support; für Fragen zur App nutze die Kontakt-Option in den Einstellungen.",
+        },
+        {
+          question: "Woher stammen die Vokabeln?",
+          answer:
+            "Hero – Deutsch B2 Beruf ist eine unabhängige Lern-App für professionelles Deutsch auf B2-Niveau. Die Vokabelthemen folgen der Struktur von „Fokus Deutsch. Erfolgreich in Alltag und Beruf. B2 Kurs- und Übungsbuch“ und können deine Vorbereitung auf den „telc Deutsch-Test für den Beruf B2“ unterstützen. Die App ist nicht mit dem Cornelsen Verlag oder der telc gGmbH verbunden, wird nicht von diesen autorisiert, gesponsert oder unterstützt. Buch- und Prüfungsbezeichnungen dienen ausschließlich der Identifikation. Alle Marken und Urheberrechte gehören ihren jeweiligen Eigentümern.",
+        },
+      ],
     },
     privacy: {
       title: "Datenschutzerklärung",

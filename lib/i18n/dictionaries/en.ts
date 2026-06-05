@@ -76,15 +76,15 @@ export const en: Dictionary = {
       productNav: APP_NAMES.b2Beruf.full,
     },
     landing: {
-      eyebrow: "Vocabulary for telc DTB B2",
+      eyebrow: "Digital companion for Berufssprachkurs",
       title: APP_NAMES.b2Beruf.title,
       titleAccent: APP_NAMES.b2Beruf.accent,
       description:
-        "Build practical German vocabulary for everyday life and work—and prepare for the telc Deutsch-Test für den Beruf B2. Structured around Fokus Deutsch B2, with 1,881 words across 12 chapters.",
+        "Leave the heavy textbook behind. The perfect digital companion for your integration course, bringing the entire 'Fokus Deutsch' B2 curriculum into a smart, interactive learning system.",
       features: [
-        "1,881 words in 12 chapters—aligned with Fokus Deutsch B2",
-        "Your own translations, explanations, and examples for every word",
-        "Flashcards, custom vocabulary, widgets, and PDF export",
+        "1,881 course-aligned words: Structured exactly across the 12 chapters of your official textbook.",
+        "Personalized learning: Type your own native translations, and use 'My Words' to add vocabulary from your daily work.",
+        "Smart practice & Cloud sync: Master terms with spaced repetition and sync your progress seamlessly across your iPhone, iPad, and Mac.",
       ],
       downloadCta: "Download on the App Store",
       downloadAria: `Download ${APP_NAMES.b2Beruf.full} on the App Store`,
@@ -108,16 +108,111 @@ export const en: Dictionary = {
         "Please include your device model and iOS version if you're reporting a technical issue—it helps us resolve things faster.",
     },
     faq: {
-      heading: "FAQ coming soon",
-      items: [],
+      heading: "Frequently Asked Questions",
+      items: [
+        {
+          question: "Is this app connected to a specific textbook?",
+          answer:
+            "The app is designed as the perfect digital companion to the 'Fokus Deutsch' B2 curriculum. It includes 1,881 words aligned with the book's 12 chapters. Note: Hero is an independent app and is not affiliated with or endorsed by Cornelsen Verlag or telc gGmbH.",
+        },
+        {
+          question: "Is the app free to use?",
+          answer:
+            "You can download the app and try the first lesson and selected preposition lists for free. To unlock all 12 chapters, full flashcard practice, and custom vocabulary features, you can upgrade to Hero Pro via subscription or a one-time lifetime purchase.",
+        },
+        {
+          question: "How do the flashcards and study modes work?",
+          answer:
+            "The app uses a Smart Learning algorithm (spaced repetition) to show you harder words more often, and easier words less often. You can practice in three modes: Translation, Explanation (German-to-German), and Synonyms.",
+        },
+        {
+          question: "Can I add my own words?",
+          answer:
+            "Yes! With the 'My Words' feature (included in Hero Pro), you can build your personal vocabulary. Add words you hear at work, include your own translations and examples, and practice them using the flashcard system.",
+        },
+        {
+          question: "Does my progress sync across my devices?",
+          answer:
+            "Yes. If you enable iCloud sync in the settings, all your learning progress, custom translations, Favorites, and 'My Words' will automatically stay updated across your iPhone, iPad, and Mac.",
+        },
+      ],
       moreQuestions: "More questions?",
       pageContactPrompt: "Still have questions or need help?",
       fullFaqLink: "Read our full FAQ",
       or: "or",
       contactSupport: "Contact support",
-      bodyBefore:
-        "We're preparing clear answers to the questions we hear most often. Until then, reach us via ",
-      bodyAfter: ".",
+      pageItems: [
+        {
+          question: "What is Hero – Deutsch B2 Beruf?",
+          answer:
+            "Hero – Deutsch B2 Beruf is a native iOS app for learning professional German at B2 level. It helps you build vocabulary for the workplace and Berufssprachkurs: structured chapters, verbs and adjectives with prepositions, flashcards with spaced repetition, and tools to track your progress.",
+        },
+        {
+          question: "What vocabulary is included?",
+          answer:
+            "The app includes three main areas: General Words (12 lessons with job-related topics), Verbs with Prepositions (lists by preposition such as an, auf, bei, …), and Adjectives with Prepositions. You can open word lists, read explanations and examples, add your own translations, and practice with flashcards.",
+        },
+        {
+          question: "How do flashcards and spaced repetition work?",
+          answer:
+            "In Study mode you review words as flashcards. The app uses spaced repetition: words you find harder come back sooner; words you know well appear less often. Your answers are saved so you can continue where you left off after closing the app.",
+        },
+        {
+          question: "Which study modes are available?",
+          answer:
+            "You can practice each word in three modes: Translation (your own or suggested translation), Explanation (short German explanation), and Synonym (related words). Switch modes in Study to train different skills.",
+        },
+        {
+          question: "What is free, and what does Hero Pro unlock?",
+          answer:
+            'The free version lets you explore the app with limited practice content: General Words lesson 1, and the "an" sections for verbs and adjectives. Hero Pro unlocks all lessons and preposition lists, full flashcard practice, My Words (personal vocabulary), and extended Word of the Day sources. You can upgrade anytime from the paywall or Settings → Your plan.',
+        },
+        {
+          question: "What are My Words and Favorites?",
+          answer:
+            "Favorites let you bookmark words from any list for quick review. My Words is your personal vocabulary: add, edit, and delete your own entries (Hero Pro). Both can be used in Study and appear in global search. You can export word lists as PDF from supported screens.",
+        },
+        {
+          question: "What is the Cockpit?",
+          answer:
+            "The Cockpit tab shows your learning overview: progress across vocabulary, statistics, Word of the Day settings, and shortcuts to keep learning. You can focus progress on app vocabulary or on My Words.",
+        },
+        {
+          question: "What is Word of the Day?",
+          answer:
+            "Word of the Day highlights one vocabulary item on the home header and in the widget. You can turn it on or off and choose which sections feed the daily word (free users: limited sections; Pro: full library). The word updates on a schedule you set in settings.",
+        },
+        {
+          question: "Can I search the whole library?",
+          answer:
+            "Yes. The Search tab finds words across General Words, Verbs, Adjectives, My Words, and Favorites. Results show context (e.g. verb vs. adjective vs. your own word) so you can jump straight to the right list.",
+        },
+        {
+          question: "Which widgets and quick actions are included?",
+          answer:
+            "The app includes a Home Screen widget for Word of the Day, a lock-screen flashcard widget, and (iOS 18+) a Control Center control to quick-add a word to My Words. Widgets stay in sync with the main app via shared app data.",
+        },
+        {
+          question: "Does my progress sync across devices?",
+          answer:
+            "Yes, optionally. In Settings → iCloud you can enable sync so translations, favorites, spaced-repetition progress, and My Words can sync across your Apple devices via iCloud. You must be signed in to the same Apple ID with iCloud enabled. Course content (JSON vocabulary) is built into the app; your personal learning data is what syncs.",
+        },
+        {
+          question: "Which languages does the app support?",
+          answer:
+            "The app interface is available in German and English (Settings → App Language). Vocabulary content is in German, with translations and learning aids suited for B2 professional German.",
+        },
+        {
+          question: "How do Hero Pro subscriptions work?",
+          answer:
+            "Hero Pro is available as monthly or yearly subscription (yearly may include a free trial — see the App Store), or as a one-time lifetime purchase. Payment is handled by Apple; manage or cancel under Settings → Your plan or in the App Store → Subscriptions. Use Restore Purchase if you reinstall or change devices. Plans may be shared with your iCloud Family where Apple allows. For billing issues, contact Apple Support; for app questions, use Contact in Settings.",
+        },
+        {
+          question: "Where does the vocabulary come from?",
+          answer:
+            "Hero – Deutsch B2 Beruf is an independent study app for professional German at B2 level. The vocabulary topics follow the structure of Fokus Deutsch. Erfolgreich in Alltag und Beruf. B2 Kurs- und Übungsbuch and can support your preparation for the telc Deutsch-Test für den Beruf B2. The app is not affiliated with, authorized by, sponsored by, or endorsed by Cornelsen Verlag or telc gGmbH. Book and exam names are used for identification only. All trademarks and copyrights belong to their respective owners.",
+        },
+      ],
     },
     privacy: {
       title: "Privacy Policy",

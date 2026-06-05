@@ -14,7 +14,7 @@ export default async function FaqPage() {
         product="b2Beruf"
         faq={t}
         comingSoonLabel={dict.common.comingSoon}
-        showFullFaqLink={false}
+        mode="page"
       />
     </ContentPage>
   );
