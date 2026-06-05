@@ -8,26 +8,37 @@ export default function AppleIcon() {
     (
       <div
         style={{
+          display: "flex",
+          position: "relative",
           width: "100%",
           height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
           background: "#f7f7f5",
+          fontFamily: "system-ui, sans-serif",
+          fontWeight: 700,
+          color: "#171717",
         }}
       >
         <div
           style={{
-            fontSize: 168,
-            fontWeight: 700,
-            letterSpacing: "-0.1em",
-            color: "#171717",
-            fontFamily: "system-ui, sans-serif",
-            lineHeight: 0.85,
-            marginTop: 14,
+            position: "absolute",
+            top: 0,
+            left: 0,
+            fontSize: 152,
+            lineHeight: 1,
           }}
         >
-          GT
+          G
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            bottom: 12.5,
+            left: 93,
+            fontSize: 152,
+            lineHeight: 1,
+          }}
+        >
+          T
         </div>
       </div>
     ),

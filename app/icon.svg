@@ -1,13 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="GizaTech">
   <rect width="32" height="32" fill="#f7f7f5"/>
   <text
-    x="16"
-    y="27.5"
-    text-anchor="middle"
+    x="0"
+    y="0"
+    dominant-baseline="hanging"
     font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="28"
+    font-size="27"
     font-weight="700"
-    letter-spacing="-0.08em"
     fill="#171717"
-  >GT</text>
+  >G</text>
+  <text
+    x="16.5"
+    y="29.8"
+    dominant-baseline="text-bottom"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="27"
+    font-weight="700"
+    fill="#171717"
+  >T</text>
 </svg>
