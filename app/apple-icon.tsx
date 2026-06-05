@@ -14,20 +14,20 @@ export default function AppleIcon() {
           alignItems: "center",
           justifyContent: "center",
           background: "#f7f7f5",
-          borderRadius: 32,
         }}
       >
         <div
           style={{
-            fontSize: 108,
-            fontWeight: 600,
-            letterSpacing: "0.08em",
+            fontSize: 168,
+            fontWeight: 700,
+            letterSpacing: "-0.1em",
             color: "#171717",
             fontFamily: "system-ui, sans-serif",
-            marginTop: 8,
+            lineHeight: 0.85,
+            marginTop: 14,
           }}
         >
-          G
+          GT
         </div>
       </div>
     ),
