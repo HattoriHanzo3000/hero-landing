@@ -1,9 +1,20 @@
+import type { Metadata } from "next";
 import { AppIntro } from "./components/app-intro";
 import { SiteFooter } from "./components/site-footer";
 import { SiteHeader } from "./components/site-header";
 import { getHomeAppIntros } from "@/lib/apps/home-apps";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { getLocale } from "@/lib/i18n/get-locale";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const { metadata } = getDictionary(locale).home;
+
+  return {
+    title: metadata.title,
+    description: metadata.description,
+  };
+}
 
 export default async function Home() {
   const locale = await getLocale();

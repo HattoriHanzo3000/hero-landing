@@ -42,6 +42,11 @@ export const ru: Dictionary = {
     },
   },
   home: {
+    metadata: {
+      title: "Умные приложения для твоей интеграции в Германии",
+      description:
+        "Премиальные iOS-приложения для жизни в Германии. Подготовься к тесту на гражданство и выучи лексику B2 Beruf с помощью умных алгоритмов.",
+    },
     title: "Продуманные приложения для жизни в Германии.",
     subtitle:
       "Я создал серию приложений Hero, опираясь на собственный опыт переезда в Германию. Это качественные iOS-инструменты, которые помогут тебе сдать экзамены, освоить язык и уверенно интегрироваться.",
@@ -66,9 +71,9 @@ export const ru: Dictionary = {
   b2Beruf: {
     appName: APP_NAMES.b2Beruf.full,
     metadata: {
-      title: APP_NAMES.b2Beruf.full,
+      title: "Hero: B2 Beruf Vokabeln | Цифровой компаньон для языковых курсов",
       description:
-        "Словарь для telc DTB B2—1 881 слово по Fokus Deutsch B2, свои переводы, карточки и многое другое.",
+        "Идеальный компаньон для курса B2. Учи 1881 слово для работы, добавляй свою лексику и тренируйся по умным карточкам с iCloud-синхронизацией.",
     },
     shell: {
       productNav: APP_NAMES.b2Beruf.full,
@@ -226,9 +231,9 @@ export const ru: Dictionary = {
   citizenship: {
     appName: APP_NAMES.citizenship.full,
     metadata: {
-      title: APP_NAMES.citizenship.full,
+      title: "Hero: Einbürgerungstest 2026 | Симулятор теста на гражданство",
       description:
-        "Подготовка к тесту «Leben in Deutschland»—310 вопросов BAMF в 9 темах, интервальные повторения, 4 языка и симуляция экзамена.",
+        "Уверенно сдай тест на гражданство. 310 официальных вопросов BAMF, умные повторения, переводы на 4 языка и симуляция экзамена в iOS-приложении.",
     },
     shell: {
       productNav: APP_NAMES.citizenship.full,

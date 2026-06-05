@@ -42,6 +42,11 @@ export const en: Dictionary = {
     },
   },
   home: {
+    metadata: {
+      title: "Focused Apps for Your German Integration",
+      description:
+        "High-craft iOS tools for your life in Germany. Master the Einbürgerungstest and professional B2 German vocabulary with our smart learning apps.",
+    },
     title: "Focused apps for your life in Germany.",
     subtitle:
       "I built the Hero app series based on my own experience of moving to Germany. These are high-craft iOS tools designed to help you pass your exams, master the language, and integrate with confidence.",
@@ -66,9 +71,9 @@ export const en: Dictionary = {
   b2Beruf: {
     appName: APP_NAMES.b2Beruf.full,
     metadata: {
-      title: APP_NAMES.b2Beruf.full,
+      title: "Hero: B2 Beruf Vokabeln | Digital Companion for Language Courses",
       description:
-        "Vocabulary for telc DTB B2—1,881 words aligned with Fokus Deutsch B2, your own translations, flashcards, and more.",
+        "The perfect digital companion for your B2 integration course. Learn 1,881 job-related words, use smart flashcards, and sync progress via iCloud.",
     },
     shell: {
       productNav: APP_NAMES.b2Beruf.full,
@@ -222,9 +227,9 @@ export const en: Dictionary = {
   citizenship: {
     appName: APP_NAMES.citizenship.full,
     metadata: {
-      title: APP_NAMES.citizenship.full,
+      title: "Hero: Einbürgerungstest 2026 | Citizenship Test Simulator",
       description:
-        "Prepare for the Life in Germany test—310 BAMF questions in 9 themes, spaced repetition, 4 languages, and exam simulation.",
+        "Pass the German citizenship test with confidence. 310 official BAMF questions, smart spaced repetition, 4 languages, and real exam simulation.",
     },
     shell: {
       productNav: APP_NAMES.citizenship.full,

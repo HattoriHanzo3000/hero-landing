@@ -40,6 +40,10 @@ export type Dictionary = {
     };
   };
   home: {
+    metadata: {
+      title: string;
+      description: string;
+    };
     title: string;
     subtitle: string;
     viewApp: string;

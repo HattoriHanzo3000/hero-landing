@@ -42,6 +42,11 @@ export const de: Dictionary = {
     },
   },
   home: {
+    metadata: {
+      title: "Smarte Apps für deine Integration in Deutschland",
+      description:
+        "Smarte iOS-Lern-Apps für dein Leben in Deutschland. Meistere den Einbürgerungstest und deinen B2-Beruf-Wortschatz effektiv und stressfrei.",
+    },
     title: "Smarte Apps für dein Leben in Deutschland.",
     subtitle:
       "Ich habe die Hero-App-Reihe basierend auf meinen eigenen Erfahrungen nach dem Umzug nach Deutschland entwickelt. Dies sind hochwertige iOS-Tools, die dir helfen, deine Prüfungen zu bestehen, die Sprache zu meistern und dich sicher zu integrieren.",
@@ -66,9 +71,9 @@ export const de: Dictionary = {
   b2Beruf: {
     appName: APP_NAMES.b2Beruf.full,
     metadata: {
-      title: APP_NAMES.b2Beruf.full,
+      title: "Hero: B2 Beruf Vokabeln | Digitaler Begleiter für Sprachkurse",
       description:
-        "Vokabeln für telc DTB B2—1881 Wörter nach Fokus Deutsch B2, eigene Übersetzungen, Karteikarten und mehr.",
+        "Dein digitaler Begleiter für den B2-Berufssprachkurs. 1.881 wichtige Wörter lernen, eigene Vokabeln hinzufügen und mit smarten Karteikarten üben.",
     },
     shell: {
       productNav: APP_NAMES.b2Beruf.full,
@@ -226,9 +231,9 @@ export const de: Dictionary = {
   citizenship: {
     appName: APP_NAMES.citizenship.full,
     metadata: {
-      title: APP_NAMES.citizenship.full,
+      title: "Hero: Einbürgerungstest 2026 | Einbürgerungstest-Simulator",
       description:
-        "Vorbereitung auf „Leben in Deutschland“ – 310 BAMF-Fragen in 9 Themen, Spaced Repetition, 4 Sprachen und Prüfungssimulation.",
+        "Bestehe den Einbürgerungstest souverän. 310 offizielle BAMF-Fragen, Spaced Repetition, 4 Sprachen und eine echte Prüfungssimulation für iOS.",
     },
     shell: {
       productNav: APP_NAMES.citizenship.full,
