@@ -103,7 +103,7 @@ export const de: Dictionary = {
     support: {
       title: "Wir helfen dir gern",
       intro:
-        `Fragen zu ${APP_NAMES.b2Beruf.full}, deinem Konto oder der App? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.`,
+        `Fragen zu ${APP_NAMES.b2Beruf.full} oder deinem Konto? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.`,
       deviceHint:
         "Bitte gib Gerätemodell und iOS-Version an, wenn du ein technisches Problem meldest – so können wir schneller helfen.",
     },
@@ -263,7 +263,7 @@ export const de: Dictionary = {
     support: {
       title: "Wir helfen dir gern",
       intro:
-        `Fragen zu ${APP_NAMES.citizenship.full}, deinem Konto oder der App? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.`,
+        `Fragen zu ${APP_NAMES.citizenship.full} oder deinem Konto? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.`,
       deviceHint:
         "Bitte gib Gerätemodell und iOS-Version an, wenn du ein technisches Problem meldest – so können wir schneller helfen.",
     },

@@ -103,7 +103,7 @@ export const en: Dictionary = {
     support: {
       title: "We're here to help",
       intro:
-        `Questions about ${APP_NAMES.b2Beruf.full}, your account, or the app? Reach our team directly—we typically respond within one business day.`,
+        `Questions about ${APP_NAMES.b2Beruf.full} or your account? Reach our team directly—we typically respond within one business day.`,
       deviceHint:
         "Please include your device model and iOS version if you're reporting a technical issue—it helps us resolve things faster.",
     },
@@ -259,7 +259,7 @@ export const en: Dictionary = {
     support: {
       title: "We're here to help",
       intro:
-        `Questions about ${APP_NAMES.citizenship.full}, your account, or the app? Reach our team directly—we typically respond within one business day.`,
+        `Questions about ${APP_NAMES.citizenship.full} or your account? Reach our team directly—we typically respond within one business day.`,
       deviceHint:
         "Please include your device model and iOS version if you're reporting a technical issue—it helps us resolve things faster.",
     },
