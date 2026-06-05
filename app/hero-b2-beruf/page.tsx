@@ -4,14 +4,24 @@ import { DownloadPanel } from "@/app/components/download-panel";
 import { ScreenshotGallery } from "./components/screenshot-gallery";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { getLocale } from "@/lib/i18n/get-locale";
+import { buildSoftwareApplicationJsonLd } from "@/lib/seo/build-software-application-json-ld";
 
 export default async function HeroB2BerufPage() {
   const locale = await getLocale();
   const dict = getDictionary(locale);
   const t = dict.b2Beruf.landing;
+  const jsonLd = buildSoftwareApplicationJsonLd({
+    product: "b2Beruf",
+    description: dict.b2Beruf.metadata.description,
+  });
 
   return (
     <AppShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-20">
         <div className="max-w-xl lg:max-w-none">
           <p className="text-xs font-medium tracking-[0.25em] text-neutral-400 uppercase">
