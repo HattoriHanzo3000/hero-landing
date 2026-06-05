@@ -18,8 +18,6 @@ export type Dictionary = {
     emailLabel: string;
     legalEyebrow: string;
     helpEyebrow: string;
-    placeholder: string;
-    placeholderSections: string;
     comingSoon: string;
     footerCopyright: string;
     headerNavAria: string;

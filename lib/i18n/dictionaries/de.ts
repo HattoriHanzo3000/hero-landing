@@ -19,8 +19,6 @@ export const de: Dictionary = {
     emailLabel: "E-Mail",
     legalEyebrow: "Rechtliches",
     helpEyebrow: "Hilfe",
-    placeholder: "Platzhalter",
-    placeholderSections: "Platzhalter-Abschnitte",
     comingSoon: "Demnächst",
     footerCopyright: "© 2025–2026 Ildar Gizatullin. Alle Rechte vorbehalten.",
     headerNavAria: "App-Seiten",

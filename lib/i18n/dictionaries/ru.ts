@@ -19,8 +19,6 @@ export const ru: Dictionary = {
     emailLabel: "Email",
     legalEyebrow: "Правовая информация",
     helpEyebrow: "Помощь",
-    placeholder: "Заглушка",
-    placeholderSections: "Разделы-заглушки",
     comingSoon: "Скоро",
     footerCopyright: "© 2025–2026 Ildar Gizatullin. Все права защищены.",
     headerNavAria: "Страницы приложений",
