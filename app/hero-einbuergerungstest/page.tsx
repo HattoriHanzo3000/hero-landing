@@ -1,6 +1,6 @@
 import { LandingFaqSection } from "@/app/components/landing-faq-section";
 import { AppShell } from "./components/app-shell";
-import { DownloadPanel } from "./components/download-panel";
+import { DownloadPanel } from "@/app/components/download-panel";
 import { ScreenshotGallery } from "./components/screenshot-gallery";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { getLocale } from "@/lib/i18n/get-locale";
@@ -44,6 +44,7 @@ export default async function HeroEinbuergerungstestPage() {
         </div>
 
         <DownloadPanel
+          product="citizenship"
           iconAlt={dict.citizenship.appName}
           downloadCta={t.downloadCta}
           downloadAria={t.downloadAria}

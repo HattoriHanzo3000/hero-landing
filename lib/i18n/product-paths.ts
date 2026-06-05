@@ -12,11 +12,6 @@ export function homeFooterLegalLinks(labels: { impressum: string }) {
   return [{ href: SITE_IMPRESSUM_PATH, label: labels.impressum }] as const;
 }
 
-export function footerSupportHref(product?: ProductKey) {
-  const key = product ?? "citizenship";
-  return `${PRODUCT_BASE_PATH[key]}/support`;
-}
-
 export function productFooterLegalLinks(
   product: ProductKey,
   labels: {

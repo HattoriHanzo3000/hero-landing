@@ -1,23 +1,26 @@
 import Image from "next/image";
 import QRCode from "qrcode";
-import { getAppStoreUrl } from "@/lib/apps/store-links";
 import { HOME_APPS } from "@/lib/apps/home-apps";
+import { getAppStoreUrl } from "@/lib/apps/store-links";
+import type { ProductKey } from "@/lib/i18n/dictionaries/types";
 
-const B2_ICON = HOME_APPS.find((app) => app.id === "b2Beruf")!.iconSrc;
 const ICON_SIZE = 128;
 
 type DownloadPanelProps = {
+  product: ProductKey;
   iconAlt: string;
   downloadCta: string;
   downloadAria: string;
 };
 
 export async function DownloadPanel({
+  product,
   iconAlt,
   downloadCta,
   downloadAria,
 }: DownloadPanelProps) {
-  const appStoreUrl = getAppStoreUrl("b2Beruf");
+  const iconSrc = HOME_APPS.find((app) => app.id === product)!.iconSrc;
+  const appStoreUrl = getAppStoreUrl(product);
   const qrDataUrl = appStoreUrl
     ? await QRCode.toDataURL(appStoreUrl, { margin: 1, width: ICON_SIZE * 2 })
     : null;
@@ -26,7 +29,7 @@ export async function DownloadPanel({
     <div className="flex flex-col items-center rounded-2xl border border-neutral-200/80 bg-white p-10 shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:p-12">
       <div className="flex items-center justify-center gap-6 sm:gap-8">
         <Image
-          src={B2_ICON}
+          src={iconSrc}
           alt={iconAlt}
           width={ICON_SIZE}
           height={ICON_SIZE}

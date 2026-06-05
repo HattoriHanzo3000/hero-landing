@@ -95,10 +95,17 @@ export type Dictionary = {
       deviceHint: string;
     };
     faq: {
-      title: string;
       heading: string;
-      bodyBefore: string;
-      bodyAfter: string;
+      items: readonly { question: string; answer: string }[];
+      pageItems?: readonly { question: string; answer: string }[];
+      pageLanguageNotice?: string;
+      moreQuestions: string;
+      pageContactPrompt: string;
+      fullFaqLink: string;
+      or: string;
+      contactSupport: string;
+      bodyBefore?: string;
+      bodyAfter?: string;
     };
     privacy: {
       title: string;
@@ -144,10 +151,17 @@ export type Dictionary = {
       deviceHint: string;
     };
     faq: {
-      title: string;
       heading: string;
-      bodyBefore: string;
-      bodyAfter: string;
+      items: readonly { question: string; answer: string }[];
+      pageItems?: readonly { question: string; answer: string }[];
+      pageLanguageNotice?: string;
+      moreQuestions: string;
+      pageContactPrompt: string;
+      fullFaqLink: string;
+      or: string;
+      contactSupport: string;
+      bodyBefore?: string;
+      bodyAfter?: string;
     };
     privacy: {
       title: string;
