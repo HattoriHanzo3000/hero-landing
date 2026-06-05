@@ -5,15 +5,22 @@ import { SiteHeader } from "./components/site-header";
 import { getHomeAppIntros } from "@/lib/apps/home-apps";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { getLocale } from "@/lib/i18n/get-locale";
+import { buildSocialMetadata } from "@/lib/seo/build-social-metadata";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
-  const { metadata } = getDictionary(locale).home;
+  const meta = getDictionary(locale).home.metadata;
 
-  return {
-    title: metadata.title,
-    description: metadata.description,
-  };
+  return buildSocialMetadata({
+    title: meta.title,
+    description: meta.description,
+    path: "/",
+    locale,
+    image: {
+      path: "/images/og-home.jpg",
+      alt: "Hero Apps Preview",
+    },
+  });
 }
 
 export default async function Home() {
