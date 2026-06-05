@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { getLocale } from "@/lib/i18n/get-locale";
 import { SITE_AUTHOR, SITE_URL } from "@/lib/seo/site";
@@ -39,6 +40,7 @@ export default async function RootLayout({
       <body className="flex min-h-dvh flex-col font-sans antialiased text-neutral-900 selection:bg-neutral-200">
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
