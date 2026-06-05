@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { LandingFaqSection } from "@/app/components/landing-faq-section";
 import { AppShell } from "./components/app-shell";
 import { DownloadPanel } from "./components/download-panel";
 import { ScreenshotGallery } from "./components/screenshot-gallery";
@@ -41,15 +41,6 @@ export default async function HeroEinbuergerungstestPage() {
               </li>
             ))}
           </ul>
-
-          <div className="mt-12">
-            <Link
-              href="/hero-einbuergerungstest/support"
-              className="text-sm tracking-wide text-neutral-400 transition-colors hover:text-neutral-700"
-            >
-              {t.supportLink}
-            </Link>
-          </div>
         </div>
 
         <DownloadPanel
@@ -61,10 +52,11 @@ export default async function HeroEinbuergerungstestPage() {
 
       <ScreenshotGallery
         heading={t.screenshotsHeading}
-        expandHint={t.screenshotExpandHint}
         closeLabel={t.screenshotCloseLabel}
         alts={t.screenshotAlts}
       />
+
+      <LandingFaqSection product="citizenship" />
     </AppShell>
   );
 }

@@ -5,11 +5,21 @@ export const PRODUCT_BASE_PATH: Record<ProductKey, string> = {
   citizenship: "/hero-einbuergerungstest",
 };
 
-export function productNavLinks(
+/** Site-wide Impressum (home page footer). Product pages use their own `/impressum` under each app. */
+export const SITE_IMPRESSUM_PATH = "/impressum";
+
+export function homeFooterLegalLinks(labels: { impressum: string }) {
+  return [{ href: SITE_IMPRESSUM_PATH, label: labels.impressum }] as const;
+}
+
+export function footerSupportHref(product?: ProductKey) {
+  const key = product ?? "citizenship";
+  return `${PRODUCT_BASE_PATH[key]}/support`;
+}
+
+export function productFooterLegalLinks(
   product: ProductKey,
   labels: {
-    support: string;
-    faq: string;
     impressum: string;
     privacy: string;
     terms: string;
@@ -17,8 +27,6 @@ export function productNavLinks(
 ) {
   const base = PRODUCT_BASE_PATH[product];
   return [
-    { href: `${base}/support`, label: labels.support },
-    { href: `${base}/faq`, label: labels.faq },
     { href: `${base}/impressum`, label: labels.impressum },
     { href: `${base}/privacy-policy`, label: labels.privacy },
     { href: `${base}/terms-of-use`, label: labels.terms },

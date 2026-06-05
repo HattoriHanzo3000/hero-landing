@@ -23,6 +23,8 @@ export type Dictionary = {
     comingSoon: string;
     footerCopyright: string;
     headerNavAria: string;
+    screenshotPrevLabel: string;
+    screenshotNextLabel: string;
     impressum: {
       title: string;
       tmgHeading: string;
@@ -77,7 +79,6 @@ export type Dictionary = {
       downloadAria: string;
       supportLink: string;
       screenshotsHeading: string;
-      screenshotExpandHint: string;
       screenshotCloseLabel: string;
       screenshotAlts: readonly [
         string,
@@ -127,7 +128,6 @@ export type Dictionary = {
       downloadAria: string;
       supportLink: string;
       screenshotsHeading: string;
-      screenshotExpandHint: string;
       screenshotCloseLabel: string;
       screenshotAlts: readonly [
         string,

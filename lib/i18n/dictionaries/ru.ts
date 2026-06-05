@@ -1,3 +1,4 @@
+import { APP_NAMES } from "@/lib/apps/app-names";
 import type { Dictionary } from "./types";
 
 export const ru: Dictionary = {
@@ -23,6 +24,8 @@ export const ru: Dictionary = {
     comingSoon: "Скоро",
     footerCopyright: "© 2025–2026 Ildar Gizatullin. Все права защищены.",
     headerNavAria: "Страницы приложений",
+    screenshotPrevLabel: "Предыдущий скриншот",
+    screenshotNextLabel: "Следующий скриншот",
     impressum: {
       title: "Impressum",
       tmgHeading: "Сведения согласно § 5 TMG",
@@ -48,14 +51,14 @@ export const ru: Dictionary = {
     apps: {
       citizenship: {
         goalTitle: "Стань гражданином Германии",
-        appName: "Hero: Einbürgerungstest 2026",
+        appName: APP_NAMES.citizenship.full,
         subtitle: "Симулятор теста на гражданство",
         description:
           "Не просто зубри — понимай. 310 официальных вопросов с логической разбивкой, умное повторение (SRS) и переводы на 4 языка для уверенной сдачи.",
       },
       b2Beruf: {
         goalTitle: "Освой профессиональный немецкий",
-        appName: "Hero: B2 Beruf Vokabeln",
+        appName: APP_NAMES.b2Beruf.full,
         subtitle: "Словарь для telc DTB B2",
         description:
           "Идеальный цифровой компаньон для твоего языкового курса. 1881 важное слово, возможность добавлять свои переводы и фокус на успешную сдачу telc.",
@@ -63,19 +66,19 @@ export const ru: Dictionary = {
     },
   },
   b2Beruf: {
-    appName: "Hero: Немецкий словарь B2",
+    appName: APP_NAMES.b2Beruf.full,
     metadata: {
-      title: "Hero: Немецкий словарь B2",
+      title: APP_NAMES.b2Beruf.full,
       description:
         "Словарь для telc DTB B2—1 881 слово по Fokus Deutsch B2, свои переводы, карточки и многое другое.",
     },
     shell: {
-      productNav: "Hero: Немецкий словарь B2",
+      productNav: APP_NAMES.b2Beruf.full,
     },
     landing: {
       eyebrow: "Словарь для telc DTB B2",
-      title: "Hero:",
-      titleAccent: "Немецкий словарь B2",
+      title: APP_NAMES.b2Beruf.title,
+      titleAccent: APP_NAMES.b2Beruf.accent,
       description:
         "Практичный немецкий для жизни и работы и подготовка к telc Deutsch-Test für den Beruf B2. По структуре Fokus Deutsch B2: 1 881 слово в 12 главах.",
       features: [
@@ -84,10 +87,9 @@ export const ru: Dictionary = {
         "Карточки, свой словарь, виджеты и экспорт в PDF",
       ],
       downloadCta: "Скачать в App Store",
-      downloadAria: "Скачать Hero: Немецкий словарь B2 в App Store",
+      downloadAria: `Скачать ${APP_NAMES.b2Beruf.full} в App Store`,
       supportLink: "Нужна помощь? Напишите в поддержку",
       screenshotsHeading: "Внутри приложения",
-      screenshotExpandHint: "Нажмите, чтобы увеличить",
       screenshotCloseLabel: "Закрыть",
       screenshotAlts: [
         "Обзор глав с прогрессом по словарю",
@@ -101,7 +103,7 @@ export const ru: Dictionary = {
     support: {
       title: "Мы готовы помочь",
       intro:
-        "Вопросы по Hero: Немецкий словарь B2, аккаунту или приложению? Напишите нам напрямую—обычно отвечаем в течение одного рабочего дня.",
+        `Вопросы по ${APP_NAMES.b2Beruf.full}, аккаунту или приложению? Напишите нам напрямую—обычно отвечаем в течение одного рабочего дня.`,
       deviceHint:
         "При технической проблеме укажите модель устройства и версию iOS—так мы быстрее разберёмся.",
     },
@@ -124,31 +126,30 @@ export const ru: Dictionary = {
     },
   },
   citizenship: {
-    appName: "Hero: Немецкое гражданство 2026",
+    appName: APP_NAMES.citizenship.full,
     metadata: {
-      title: "Hero: Немецкое гражданство 2026",
+      title: APP_NAMES.citizenship.full,
       description:
         "Подготовка к тесту «Leben in Deutschland»—310 вопросов BAMF в 9 темах, интервальные повторения, 4 языка и симуляция экзамена.",
     },
     shell: {
-      productNav: "Hero: Немецкое гражданство 2026",
+      productNav: APP_NAMES.citizenship.full,
     },
     landing: {
       eyebrow: "Симулятор теста на гражданство",
-      title: "Hero:",
-      titleAccent: "Немецкое гражданство 2026",
+      title: APP_NAMES.citizenship.title,
+      titleAccent: APP_NAMES.citizenship.accent,
       description:
-        "Не зубрите—освойте тест «Leben in Deutschland». Hero 2.0 собирает все 310 официальных вопросов в систему обучения. На немецком, английском, русском и турецком.",
+        "Не просто зубри — понимай. Hero превращает хаотичный официальный каталог в умную и красивую систему обучения, которая подстраивается под твой темп.",
       features: [
-        "9 тем: все 310 официальных вопросов, структурированно, а не хаотичные списки",
-        "Smart Learning (SRS): слабые места повторяются вовремя",
-        "Реальная симуляция экзамена: 33 вопроса, 60 минут, с учётом вашей земли",
+        "9 логических тем: все 310 вопросов BAMF разбиты для легкого изучения.",
+        "Без языковых барьеров: моментальные переводы на 4 языка.",
+        "Умные повторения (SRS): алгоритм повторяет сложные вопросы в идеальное время.",
       ],
       downloadCta: "Скачать в App Store",
-      downloadAria: "Скачать Hero: Немецкое гражданство 2026 в App Store",
+      downloadAria: `Скачать ${APP_NAMES.citizenship.full} в App Store`,
       supportLink: "Нужна помощь? Напишите в поддержку",
       screenshotsHeading: "Внутри приложения",
-      screenshotExpandHint: "Нажмите, чтобы увеличить",
       screenshotCloseLabel: "Закрыть",
       screenshotAlts: [
         "Обзор тем с прогрессом обучения",
@@ -162,7 +163,7 @@ export const ru: Dictionary = {
     support: {
       title: "Мы готовы помочь",
       intro:
-        "Вопросы по Hero: Немецкое гражданство 2026, аккаунту или приложению? Напишите нам напрямую—обычно отвечаем в течение одного рабочего дня.",
+        `Вопросы по ${APP_NAMES.citizenship.full}, аккаунту или приложению? Напишите нам напрямую—обычно отвечаем в течение одного рабочего дня.`,
       deviceHint:
         "При технической проблеме укажите модель устройства и версию iOS—так мы быстрее разберёмся.",
     },

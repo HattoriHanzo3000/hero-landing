@@ -1,3 +1,4 @@
+import { APP_NAMES } from "@/lib/apps/app-names";
 import type { Dictionary } from "./types";
 
 export const de: Dictionary = {
@@ -23,6 +24,8 @@ export const de: Dictionary = {
     comingSoon: "Demnächst",
     footerCopyright: "© 2025–2026 Ildar Gizatullin. Alle Rechte vorbehalten.",
     headerNavAria: "App-Seiten",
+    screenshotPrevLabel: "Vorheriger Screenshot",
+    screenshotNextLabel: "Nächster Screenshot",
     impressum: {
       title: "Impressum",
       tmgHeading: "Angaben gemäß § 5 TMG",
@@ -48,14 +51,14 @@ export const de: Dictionary = {
     apps: {
       citizenship: {
         goalTitle: "Werde deutscher Staatsbürger",
-        appName: "Hero: Einbürgerungstest 2026",
+        appName: APP_NAMES.citizenship.full,
         subtitle: "Einbürgerungstest-Simulator",
         description:
           "Nicht nur auswendig lernen, sondern verstehen. 310 BAMF-Fragen in logischen Themen, Smart Learning und Unterstützung in 4 Sprachen für deine Prüfung.",
       },
       b2Beruf: {
         goalTitle: "Meistere Deutsch für den Beruf",
-        appName: "Hero: B2 Beruf Vokabeln",
+        appName: APP_NAMES.b2Beruf.full,
         subtitle: "Vokabeln für telc DTB B2",
         description:
           "Der perfekte digitale Begleiter für deinen Sprachkurs. Lerne 1.881 wichtige Wörter, trage eigene Übersetzungen ein und bereite dich gezielt auf den telc-Test vor.",
@@ -63,19 +66,19 @@ export const de: Dictionary = {
     },
   },
   b2Beruf: {
-    appName: "Hero: B2 Beruf Vokabeln",
+    appName: APP_NAMES.b2Beruf.full,
     metadata: {
-      title: "Hero: B2 Beruf Vokabeln",
+      title: APP_NAMES.b2Beruf.full,
       description:
         "Vokabeln für telc DTB B2—1881 Wörter nach Fokus Deutsch B2, eigene Übersetzungen, Karteikarten und mehr.",
     },
     shell: {
-      productNav: "Hero: B2 Beruf Vokabeln",
+      productNav: APP_NAMES.b2Beruf.full,
     },
     landing: {
       eyebrow: "Vokabeln für telc DTB B2",
-      title: "Hero:",
-      titleAccent: "B2 Beruf Vokabeln",
+      title: APP_NAMES.b2Beruf.title,
+      titleAccent: APP_NAMES.b2Beruf.accent,
       description:
         "Baue praktischen deutschen Wortschatz für Alltag und Beruf auf und bereite dich auf den telc Deutsch-Test für den Beruf B2 vor. Orientiert an Fokus Deutsch B2—1881 Wörter in 12 Kapiteln.",
       features: [
@@ -84,10 +87,9 @@ export const de: Dictionary = {
         "Karteikarten, eigene Vokabeln, Widgets und PDF-Export",
       ],
       downloadCta: "Im App Store laden",
-      downloadAria: "Hero: B2 Beruf Vokabeln im App Store laden",
+      downloadAria: `${APP_NAMES.b2Beruf.full} im App Store laden`,
       supportLink: "Hilfe nötig? Support kontaktieren",
       screenshotsHeading: "In der App",
-      screenshotExpandHint: "Zum Vergrößern tippen",
       screenshotCloseLabel: "Schließen",
       screenshotAlts: [
         "Kapitelübersicht mit Lernfortschritt",
@@ -101,7 +103,7 @@ export const de: Dictionary = {
     support: {
       title: "Wir helfen dir gern",
       intro:
-        "Fragen zu Hero: B2 Beruf Vokabeln, deinem Konto oder der App? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.",
+        `Fragen zu ${APP_NAMES.b2Beruf.full}, deinem Konto oder der App? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.`,
       deviceHint:
         "Bitte gib Gerätemodell und iOS-Version an, wenn du ein technisches Problem meldest – so können wir schneller helfen.",
     },
@@ -124,31 +126,30 @@ export const de: Dictionary = {
     },
   },
   citizenship: {
-    appName: "Hero: Einbürgerungstest 2026",
+    appName: APP_NAMES.citizenship.full,
     metadata: {
-      title: "Hero: Einbürgerungstest 2026",
+      title: APP_NAMES.citizenship.full,
       description:
         "Vorbereitung auf „Leben in Deutschland“ – 310 BAMF-Fragen in 9 Themen, Spaced Repetition, 4 Sprachen und Prüfungssimulation.",
     },
     shell: {
-      productNav: "Hero: Einbürgerungstest 2026",
+      productNav: APP_NAMES.citizenship.full,
     },
     landing: {
       eyebrow: "Einbürgerungstest-Simulator",
-      title: "Hero:",
-      titleAccent: "Einbürgerungstest 2026",
+      title: APP_NAMES.citizenship.title,
+      titleAccent: APP_NAMES.citizenship.accent,
       description:
-        "Warum dich durch ungeordnete Fragenlisten quälen? Hero 2.0 strukturiert alle 310 BAMF-Fragen logisch – damit du den Test „Leben in Deutschland“ nicht nur bestehst, sondern verstehst. Jetzt auf Deutsch, Englisch, Russisch und Türkisch.",
+        "Nicht nur auswendig lernen, sondern verstehen. Hero verwandelt den offiziellen Fragenkatalog in ein smartes, wunderschönes Lernerlebnis, das sich deinem Tempo anpasst.",
       features: [
-        "9 Logik-Themen: 310 offizielle Fragen strukturiert statt ungeordnet",
-        "Smart Learning (SRS): Schwächen merken, optimal wiederholen",
-        "Echte Prüfungssimulation: 33 Fragen, 60 Minuten, inkl. Landesfragen",
+        "9 logische Themen: Alle 310 BAMF-Fragen perfekt portioniert.",
+        "Sprachbarrieren überwinden: Sofortige Übersetzungen in 4 Sprachen.",
+        "Spaced Repetition: Der Algorithmus wiederholt Schwächen zum perfekten Zeitpunkt.",
       ],
       downloadCta: "Im App Store laden",
-      downloadAria: "Hero: Einbürgerungstest 2026 im App Store laden",
+      downloadAria: `${APP_NAMES.citizenship.full} im App Store laden`,
       supportLink: "Hilfe nötig? Support kontaktieren",
       screenshotsHeading: "In der App",
-      screenshotExpandHint: "Zum Vergrößern tippen",
       screenshotCloseLabel: "Schließen",
       screenshotAlts: [
         "Themenübersicht mit Lernfortschritt",
@@ -162,7 +163,7 @@ export const de: Dictionary = {
     support: {
       title: "Wir helfen dir gern",
       intro:
-        "Fragen zu Hero: Einbürgerungstest 2026, deinem Konto oder der App? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.",
+        `Fragen zu ${APP_NAMES.citizenship.full}, deinem Konto oder der App? Schreib uns direkt – in der Regel antworten wir innerhalb eines Werktags.`,
       deviceHint:
         "Bitte gib Gerätemodell und iOS-Version an, wenn du ein technisches Problem meldest – so können wir schneller helfen.",
     },

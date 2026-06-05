@@ -1,3 +1,4 @@
+import { APP_NAMES } from "@/lib/apps/app-names";
 import type { Dictionary } from "./types";
 
 export const en: Dictionary = {
@@ -23,6 +24,8 @@ export const en: Dictionary = {
     comingSoon: "Coming soon",
     footerCopyright: "© 2025–2026 Ildar Gizatullin. All rights reserved.",
     headerNavAria: "App pages",
+    screenshotPrevLabel: "Previous screenshot",
+    screenshotNextLabel: "Next screenshot",
     impressum: {
       title: "Impressum",
       tmgHeading: "Information pursuant to § 5 TMG",
@@ -48,14 +51,14 @@ export const en: Dictionary = {
     apps: {
       citizenship: {
         goalTitle: "Become a German Citizen",
-        appName: "Hero: Einbürgerungstest 2026",
+        appName: APP_NAMES.citizenship.full,
         subtitle: "Citizenship test simulator",
         description:
           "Don't just memorize—master the 'Life in Germany' test. Features 310 official questions logically grouped, smart repetition, and support in 4 languages.",
       },
       b2Beruf: {
         goalTitle: "Master Professional German",
-        appName: "Hero: B2 Beruf Vokabeln",
+        appName: APP_NAMES.b2Beruf.full,
         subtitle: "Vocabulary for telc DTB B2",
         description:
           "The perfect digital companion for your language course. Learn 1,881 essential words, add your own translations, and prepare confidently for the telc exam.",
@@ -63,19 +66,19 @@ export const en: Dictionary = {
     },
   },
   b2Beruf: {
-    appName: "Hero: B2 German Vocabulary",
+    appName: APP_NAMES.b2Beruf.full,
     metadata: {
-      title: "Hero: B2 German Vocabulary",
+      title: APP_NAMES.b2Beruf.full,
       description:
         "Vocabulary for telc DTB B2—1,881 words aligned with Fokus Deutsch B2, your own translations, flashcards, and more.",
     },
     shell: {
-      productNav: "Hero: B2 German Vocabulary",
+      productNav: APP_NAMES.b2Beruf.full,
     },
     landing: {
       eyebrow: "Vocabulary for telc DTB B2",
-      title: "Hero:",
-      titleAccent: "B2 German Vocabulary",
+      title: APP_NAMES.b2Beruf.title,
+      titleAccent: APP_NAMES.b2Beruf.accent,
       description:
         "Build practical German vocabulary for everyday life and work—and prepare for the telc Deutsch-Test für den Beruf B2. Structured around Fokus Deutsch B2, with 1,881 words across 12 chapters.",
       features: [
@@ -84,10 +87,9 @@ export const en: Dictionary = {
         "Flashcards, custom vocabulary, widgets, and PDF export",
       ],
       downloadCta: "Download on the App Store",
-      downloadAria: "Download Hero: B2 German Vocabulary on the App Store",
+      downloadAria: `Download ${APP_NAMES.b2Beruf.full} on the App Store`,
       supportLink: "Need help? Contact support",
       screenshotsHeading: "Inside the app",
-      screenshotExpandHint: "Click to enlarge",
       screenshotCloseLabel: "Close",
       screenshotAlts: [
         "Chapter overview with vocabulary progress",
@@ -101,7 +103,7 @@ export const en: Dictionary = {
     support: {
       title: "We're here to help",
       intro:
-        "Questions about Hero: B2 German Vocabulary, your account, or the app? Reach our team directly—we typically respond within one business day.",
+        `Questions about ${APP_NAMES.b2Beruf.full}, your account, or the app? Reach our team directly—we typically respond within one business day.`,
       deviceHint:
         "Please include your device model and iOS version if you're reporting a technical issue—it helps us resolve things faster.",
     },
@@ -120,31 +122,30 @@ export const en: Dictionary = {
     },
   },
   citizenship: {
-    appName: "Hero: German Citizenship 2026",
+    appName: APP_NAMES.citizenship.full,
     metadata: {
-      title: "Hero: German Citizenship 2026",
+      title: APP_NAMES.citizenship.full,
       description:
         "Prepare for the Life in Germany test—310 BAMF questions in 9 themes, spaced repetition, 4 languages, and exam simulation.",
     },
     shell: {
-      productNav: "Hero: German Citizenship 2026",
+      productNav: APP_NAMES.citizenship.full,
     },
     landing: {
       eyebrow: "Citizenship test simulator",
-      title: "Hero:",
-      titleAccent: "German Citizenship 2026",
+      title: APP_NAMES.citizenship.title,
+      titleAccent: APP_NAMES.citizenship.accent,
       description:
-        "Don't just memorize—master the Life in Germany test. Hero 2.0 organizes all 310 official questions into a structured learning system. Now in German, English, Russian, and Turkish.",
+        "Don't just memorize—understand. Hero transforms the chaotic official catalog into a smart, beautifully designed learning experience that adapts to your pace.",
       features: [
-        "9 topic themes: all 310 official questions, structured—not scattered lists",
-        "Smart Learning (SRS): weak spots repeated at the perfect time",
-        "Real exam simulation: 33 questions, 60 minutes, including your federal state",
+        "9 logical themes: All 310 BAMF questions broken down for easy studying.",
+        "Overcome language barriers: Instant translations in 4 languages.",
+        "Spaced Repetition: The algorithm repeats your weak spots at the perfect time.",
       ],
       downloadCta: "Download on the App Store",
-      downloadAria: "Download Hero: German Citizenship 2026 on the App Store",
+      downloadAria: `Download ${APP_NAMES.citizenship.full} on the App Store`,
       supportLink: "Need help? Contact support",
       screenshotsHeading: "Inside the app",
-      screenshotExpandHint: "Click to enlarge",
       screenshotCloseLabel: "Close",
       screenshotAlts: [
         "Topic overview with learning progress",
@@ -158,7 +159,7 @@ export const en: Dictionary = {
     support: {
       title: "We're here to help",
       intro:
-        "Questions about Hero: German Citizenship 2026, your account, or the app? Reach our team directly—we typically respond within one business day.",
+        `Questions about ${APP_NAMES.citizenship.full}, your account, or the app? Reach our team directly—we typically respond within one business day.`,
       deviceHint:
         "Please include your device model and iOS version if you're reporting a technical issue—it helps us resolve things faster.",
     },

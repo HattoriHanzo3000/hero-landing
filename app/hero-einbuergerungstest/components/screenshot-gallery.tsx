@@ -2,23 +2,23 @@ import {
   CITIZENSHIP_SCREENSHOT_IDS,
   getCitizenshipScreenshotSrc,
 } from "@/lib/apps/citizenship-screenshots";
+import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { getLocale } from "@/lib/i18n/get-locale";
 import { ScreenshotGalleryClient } from "@/app/hero-b2-beruf/components/screenshot-gallery-client";
 
 type ScreenshotGalleryProps = {
   heading: string;
-  expandHint: string;
   closeLabel: string;
   alts: readonly string[];
 };
 
 export async function ScreenshotGallery({
   heading,
-  expandHint,
   closeLabel,
   alts,
 }: ScreenshotGalleryProps) {
   const locale = await getLocale();
+  const dict = getDictionary(locale);
 
   const screenshots = CITIZENSHIP_SCREENSHOT_IDS.map((id, index) => ({
     src: getCitizenshipScreenshotSrc(id, locale),
@@ -28,8 +28,9 @@ export async function ScreenshotGallery({
   return (
     <ScreenshotGalleryClient
       heading={heading}
-      expandHint={expandHint}
       closeLabel={closeLabel}
+      prevLabel={dict.common.screenshotPrevLabel}
+      nextLabel={dict.common.screenshotNextLabel}
       screenshots={screenshots}
     />
   );
