@@ -42,5 +42,3 @@ next-env.d.ts
 
 # local-only (not for the public repo)
 /docs/terminal-commands.txt
-/AGENTS.md
-/CLAUDE.md
