@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { getLocale } from "@/lib/i18n/get-locale";
-import { SITE_URL } from "@/lib/seo/site";
+import { SITE_AUTHOR, SITE_URL } from "@/lib/seo/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "GizaTech - Independent iOS Development Studio",
   description: "Creator of the Hero app series.",
+  authors: [{ name: SITE_AUTHOR.name, url: SITE_AUTHOR.url }],
+  creator: SITE_AUTHOR.name,
+  publisher: SITE_AUTHOR.name,
 };
 
 export default async function RootLayout({
