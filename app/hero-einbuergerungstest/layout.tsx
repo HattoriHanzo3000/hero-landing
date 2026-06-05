@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
     path: PRODUCT_BASE_PATH.citizenship,
     locale,
     image: {
-      path: "/images/og-citizenship.jpg",
+      path: "/images/og-citizenship.png",
       alt: "Hero: Einbürgerungstest 2026 Preview",
     },
   });

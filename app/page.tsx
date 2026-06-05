@@ -17,7 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
     path: "/",
     locale,
     image: {
-      path: "/images/og-home.jpg",
+      path: "/images/og-home.png",
       alt: "Hero Apps Preview",
     },
   });

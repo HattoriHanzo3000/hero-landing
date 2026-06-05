@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
     path: PRODUCT_BASE_PATH.b2Beruf,
     locale,
     image: {
-      path: "/images/og-b2-beruf.jpg",
+      path: "/images/og-b2beruf.png",
       alt: "Hero: B2 Beruf Vokabeln Preview",
     },
   });
